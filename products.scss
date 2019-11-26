@@ -60,21 +60,26 @@ body {
         }
       }
     }
-    .box {
-      width: 100%;
-      height: 140px;
-    }
+    // .box {
+    //   width: 100%;
+    //   height: 140px;
+    // }
     .container-fluid {
       .first_product_box {
         padding-top: 140px;
         width: 100%;
-        height: calc(100% - 140px);
-        background-color: burlywood;
+        height: 100%;
+        // background-color: burlywood;
+        background-image: url("./Products_pic/layer1.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
       }
       .product_box {
         width: 100%;
         height: 100vh;
-        margin: 20px 0 0 0;
+        margin: 0 0 20px 0;
         border: black 1px solid;
       }
       .box1 {
@@ -115,27 +120,55 @@ body {
             padding: 15px;
           }
         }
-        .box3 {
-          position: relative;
-          .layer3_cont {
+      }
+      .box3 {
+        position: relative;
+        .layer3_cont {
+          display: flex;
+          height: 100%;
+          width: 100%;
+          .layer3 {
+            border: #ee0a35 1px solid;
             height: 100%;
-            width: 100%;
-            .layer3 {
-              border: #ee0a35 1px solid;
-              height: 100%;
-            }
-          }
-          .layer3_backRect {
-            position: absolute;
-            width: 50%;
-            height: 50%;
-            background-color: salmon;
-            transform: translateX(50%);
-            transform: translateY(50%);
-            top: -50%;
-            right: -50%;
           }
         }
+        .layer3_backRect {
+          position: absolute;
+          width: 50%;
+          height: 70%;
+          background-color: salmon;
+          // margin:0 auto
+          // transform: translateX(50%);
+          // transform: translateY(50%);
+          top: 15%;
+          left: 25%;
+        }
+      }
+
+      .box4{
+        position: relative;
+        .layer4_cont{
+          position: absolute;
+          display: flex;
+          height: 100%;
+          width: 100%;
+          .layer4{
+            border: #ee0a35 1px solid;
+            height: 100%;
+          }
+        }
+        .layer4_group{
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          display: flex;
+          justify-content: space-between;
+          .layer4_backRect{
+          height: 100%;
+          background-color: salmon;
+        }
+        }
+        
       }
     }
 

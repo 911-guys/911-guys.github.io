@@ -77,22 +77,21 @@ body .container-fluid .navbar .container .bg-img:hover {
   border-bottom: solid plum 10px;
 }
 
-body .container-fluid .box {
-  width: 100%;
-  height: 140px;
-}
-
 body .container-fluid .container-fluid .first_product_box {
   padding-top: 140px;
   width: 100%;
-  height: calc(100% - 140px);
-  background-color: burlywood;
+  height: 100%;
+  background-image: url("./Products_pic/layer1.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
 }
 
 body .container-fluid .container-fluid .product_box {
   width: 100%;
   height: 100vh;
-  margin: 20px 0 0 0;
+  margin: 0 0 20px 0;
   border: black 1px solid;
 }
 
@@ -134,31 +133,65 @@ body .container-fluid .container-fluid .box2 .layer2_r .layer2_r_item {
   padding: 15px;
 }
 
-body .container-fluid .container-fluid .box2 .box3 {
+body .container-fluid .container-fluid .box3 {
   position: relative;
 }
 
-body .container-fluid .container-fluid .box2 .box3 .layer3_cont {
+body .container-fluid .container-fluid .box3 .layer3_cont {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   height: 100%;
   width: 100%;
 }
 
-body .container-fluid .container-fluid .box2 .box3 .layer3_cont .layer3 {
+body .container-fluid .container-fluid .box3 .layer3_cont .layer3 {
   border: #ee0a35 1px solid;
   height: 100%;
 }
 
-body .container-fluid .container-fluid .box2 .box3 .layer3_backRect {
+body .container-fluid .container-fluid .box3 .layer3_backRect {
   position: absolute;
   width: 50%;
-  height: 50%;
+  height: 70%;
   background-color: salmon;
-  -webkit-transform: translateX(50%);
-          transform: translateX(50%);
-  -webkit-transform: translateY(50%);
-          transform: translateY(50%);
-  top: -50%;
-  right: -50%;
+  top: 15%;
+  left: 25%;
+}
+
+body .container-fluid .container-fluid .box4 {
+  position: relative;
+}
+
+body .container-fluid .container-fluid .box4 .layer4_cont {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  width: 100%;
+}
+
+body .container-fluid .container-fluid .box4 .layer4_cont .layer4 {
+  border: #ee0a35 1px solid;
+  height: 100%;
+}
+
+body .container-fluid .container-fluid .box4 .layer4_group {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body .container-fluid .container-fluid .box4 .layer4_group .layer4_backRect {
+  height: 100%;
+  background-color: salmon;
 }
 
 body .container-fluid .footer {

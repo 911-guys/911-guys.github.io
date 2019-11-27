@@ -85,7 +85,12 @@ body .container-fluid .container-fluid .first_product_box {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  background-attachment: fixed;
+}
+
+@media screen and (max-width: 768px) {
+  body .container-fluid .container-fluid .first_product_box {
+    height: 33vh;
+  }
 }
 
 body .container-fluid .container-fluid .product_box {
@@ -95,10 +100,14 @@ body .container-fluid .container-fluid .product_box {
   border: black 1px solid;
 }
 
+@media screen and (max-width: 768px) {
+  body .container-fluid .container-fluid .product_box {
+    height: 33vh;
+  }
+}
+
 body .container-fluid .container-fluid .box1 {
   overflow: hidden;
-  width: 100%;
-  height: 100%;
 }
 
 body .container-fluid .container-fluid .box1 .swiper-wrapper .swiper-slide {
@@ -109,7 +118,7 @@ body .container-fluid .container-fluid .box1 .swiper-wrapper .swiper-slide {
 }
 
 body .container-fluid .container-fluid .box1 .swiper-wrapper .swiper-pagination {
-  height: 10%;
+  bottom: unset;
 }
 
 body .container-fluid .container-fluid .box2 .layer2_l {
@@ -192,6 +201,52 @@ body .container-fluid .container-fluid .box4 .layer4_group {
 body .container-fluid .container-fluid .box4 .layer4_group .layer4_backRect {
   height: 100%;
   background-color: salmon;
+}
+
+body .container-fluid .container-fluid .box5 {
+  position: relative;
+}
+
+body .container-fluid .container-fluid .box5 .layer5PicBox {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body .container-fluid .container-fluid .box5 .layer5PicBox .layer5Pic {
+  height: 100%;
+  border: darkmagenta solid 1px;
+}
+
+body .container-fluid .container-fluid .box5 .layer5PicMid {
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  height: 100%;
+  background-color: darkgreen;
+}
+
+body .container-fluid .container-fluid .swiper-container .swiper-wrapper .swiper-slide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media screen and (max-width: 768px) {
+  body .container-fluid .container-fluid .swiper-container .swiper-wrapper .swiper-slide {
+    height: 33vh;
+  }
 }
 
 body .container-fluid .footer {

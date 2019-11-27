@@ -74,31 +74,33 @@ body {
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
-        background-attachment: fixed;
+        // background-attachment: fixed;
+        @media screen and (max-width: 768px) {
+          height: 33vh;
+        }
       }
       .product_box {
         width: 100%;
         height: 100vh;
         margin: 0 0 20px 0;
         border: black 1px solid;
+        @media screen and (max-width: 768px) {
+          height: 33vh;
+        }
       }
       .box1 {
         overflow: hidden;
-        width: 100%;
-        height: 100%;
-        // margin-top: 20px;
+
         .swiper-wrapper {
-          // width: 100%;
-          // height: 100%;
           .swiper-slide {
-            // width: 100%;
             height: 90%;
             background-repeat: no-repeat;
             background-size: cover;
             background-position: center;
           }
+
           .swiper-pagination {
-            height: 10%;
+            bottom: unset;
           }
         }
       }
@@ -145,30 +147,69 @@ body {
         }
       }
 
-      .box4{
+      .box4 {
         position: relative;
-        .layer4_cont{
+        .layer4_cont {
           position: absolute;
           display: flex;
           height: 100%;
           width: 100%;
-          .layer4{
+          .layer4 {
             border: #ee0a35 1px solid;
             height: 100%;
           }
         }
-        .layer4_group{
+        .layer4_group {
           position: absolute;
           width: 100%;
           height: 100%;
           display: flex;
           justify-content: space-between;
-          .layer4_backRect{
+          .layer4_backRect {
+            height: 100%;
+            background-color: salmon;
+          }
+        }
+      }
+      .box5 {
+        position: relative;
+        // 
+        .layer5PicBox{
           height: 100%;
-          background-color: salmon;
+          
+          display: flex;
+          justify-content: space-between;
+          .layer5Pic{
+            height: 100%;
+          
+          border: darkmagenta solid 1px;
+          }
         }
+        .layer5PicMid{
+          position: absolute;
+          left: 50%;
+          transform:translateX(-50%);
+          height: 100% ;         
+          background-color: darkgreen;
         }
-        
+      }
+      .swiper-container {
+        // width: 100%;
+        // height: 100%;
+        .swiper-wrapper {
+          .swiper-slide {
+            // text-align: center;
+            // font-size: 18px;
+            // background: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            @media screen and (max-width: 768px) {
+              height: 33vh;
+            }
+
+          }
+        }
       }
     }
 

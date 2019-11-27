@@ -96,11 +96,6 @@ body .container-fluid .navbar .container .selectBar {
     text-align: center;
     font-size: 26px;
   }
-  body .container-fluid .navbar .container .selectBar:hover ul {
-    /* flex-wrap: wrap; */
-    display: block;
-    /* background-color: aqua; */
-  }
 }
 
 body .container-fluid .navbar .container .bg-img {
@@ -168,7 +163,7 @@ body .container-fluid .container-fluid .row .col {
 
 @media screen and (max-width: 991px) {
   body .container-fluid .container-fluid .row .col {
-    height: 50%;
+    max-height: 50%;
   }
 }
 

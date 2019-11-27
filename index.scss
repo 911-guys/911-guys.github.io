@@ -47,6 +47,52 @@ body {
           }
         }
 
+        // .selectBar {
+        //   position: relative;
+        // background-image: url(./obj/select.png);
+        //   ul {
+        //     position: absolute;
+        //     background-color: #eecccc;
+        //     flex-wrap: wrap;
+        //     top: 70px;
+        //     width: 100px;
+        //     /* height: 100px; */
+        //     display: none;
+        //   }
+        // }
+        // *******************************************************
+        .selectBar {
+          display: none;
+          @media screen and (max-width: 768px) {
+            
+            display: block;
+            background-image: url("./obj/select.png");
+            width: 60px;
+            height: 60px;
+            position: relative;
+            ul {
+              position: absolute;
+              display: flex;
+              flex-wrap: wrap;
+              top: 70px;              
+              display: none;
+              width: 200px;
+              // height: 200px;
+              background-color: cornsilk;
+            }
+            ul a{
+              text-align: center;
+              font-size: 26px;
+            }
+
+            &:hover ul {
+              /* flex-wrap: wrap; */
+              display: block;
+              /* background-color: aqua; */
+            }
+          }
+        }
+// *************************************************************
         .bg-img {
           height: 100%;
           width: 25%;
@@ -101,6 +147,9 @@ body {
         height: 75%;
         .col {
           height: 100%;
+          @media screen and (max-width: 991px){
+            height: 50%;
+          }
           .scene_head {
             height: 100%;
             animation-name: jump;

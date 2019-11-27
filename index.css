@@ -46,7 +46,10 @@ body .container-fluid .navbar .container .navbar-brand {
 
 @media screen and (max-width: 768px) {
   body .container-fluid .navbar .container .navbar-brand {
-    display: none;
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
   }
 }
 
@@ -131,6 +134,13 @@ body .container-fluid .container-fluid .scene .bg-img {
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
+}
+
+@media screen and (max-width: 768px) {
+  body .container-fluid .container-fluid .scene .bg-img {
+    width: 300px;
+    height: 300px;
+  }
 }
 
 body .container-fluid .container-fluid #scene4 {

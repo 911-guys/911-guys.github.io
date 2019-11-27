@@ -46,6 +46,33 @@ body {
             display: none;
           }
         }
+        .selectBar {
+          display: none;
+          @media screen and (max-width: 768px) {
+            
+            display: block;
+            background-image: url("./obj/select.png");
+            width: 60px;
+            height: 60px;
+            position: relative;
+            ul {
+              position: absolute;
+              display: flex;
+              flex-wrap: wrap;
+              top: 70px;              
+              display: none;
+              width: 200px;
+              // height: 200px;
+              background-color: cornsilk;
+            }
+            ul a{
+              text-align: center;
+              font-size: 26px;
+            }
+
+           
+          }
+        }
         .bg-img {
           height: 100%;
           width: 25%;

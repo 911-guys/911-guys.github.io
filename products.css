@@ -63,6 +63,36 @@ body .container-fluid .navbar .container .imgBox {
   }
 }
 
+body .container-fluid .navbar .container .selectBar {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  body .container-fluid .navbar .container .selectBar {
+    display: block;
+    background-image: url("./obj/select.png");
+    width: 60px;
+    height: 60px;
+    position: relative;
+  }
+  body .container-fluid .navbar .container .selectBar ul {
+    position: absolute;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    top: 70px;
+    display: none;
+    width: 200px;
+    background-color: cornsilk;
+  }
+  body .container-fluid .navbar .container .selectBar ul a {
+    text-align: center;
+    font-size: 26px;
+  }
+}
+
 body .container-fluid .navbar .container .bg-img {
   height: 100%;
   width: 25%;

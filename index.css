@@ -4,7 +4,7 @@ body {
   margin: 0;
 }
 
-body .container-fluid {
+body .allBg {
   width: 100%;
   height: 100%;
   background-image: url("./img/pic2/BG.png");
@@ -13,12 +13,12 @@ body .container-fluid {
   background-position: center;
 }
 
-body .container-fluid .navbar {
+body .allBg .navbar {
   width: 100%;
   background-image: url("./img/pic2/NAV.png");
 }
 
-body .container-fluid .navbar .container {
+body .allBg .navbar .container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -28,7 +28,7 @@ body .container-fluid .navbar .container {
       flex-wrap: nowrap;
 }
 
-body .container-fluid .navbar .container .navbar-brand {
+body .allBg .navbar .container .navbar-brand {
   padding-top: 100px;
   height: 180px;
   width: 160px;
@@ -45,7 +45,7 @@ body .container-fluid .navbar .container .navbar-brand {
 }
 
 @media screen and (max-width: 768px) {
-  body .container-fluid .navbar .container .navbar-brand {
+  body .allBg .navbar .container .navbar-brand {
     position: absolute;
     left: 50%;
     -webkit-transform: translateX(-50%);
@@ -53,7 +53,7 @@ body .container-fluid .navbar .container .navbar-brand {
   }
 }
 
-body .container-fluid .navbar .container .imgBox {
+body .allBg .navbar .container .imgBox {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -66,29 +66,29 @@ body .container-fluid .navbar .container .imgBox {
 }
 
 @media screen and (max-width: 768px) {
-  body .container-fluid .navbar .container .imgBox {
+  body .allBg .navbar .container .imgBox {
     display: none;
   }
 }
 
-body .container-fluid .navbar .container .nav-item {
+body .allBg .navbar .container .nav-item {
   display: none;
 }
 
 @media screen and (max-width: 768px) {
-  body .container-fluid .navbar .container .nav-item {
+  body .allBg .navbar .container .nav-item {
     display: block;
     background-image: url("./obj/select.png");
     width: 60px;
     height: 60px;
     position: relative;
   }
-  body .container-fluid .navbar .container .nav-item .dropdown-toggle:after {
+  body .allBg .navbar .container .nav-item .dropdown-toggle:after {
     border-top: 0;
   }
 }
 
-body .container-fluid .navbar .container .bg-img {
+body .allBg .navbar .container .bg-img {
   height: 100%;
   width: 25%;
   -webkit-transition: 0.5s;
@@ -98,24 +98,24 @@ body .container-fluid .navbar .container .bg-img {
   background-position: center;
 }
 
-body .container-fluid .navbar .container .bg-img:hover {
+body .allBg .navbar .container .bg-img:hover {
   border-bottom: solid plum 10px;
 }
 
-body .container-fluid .container-fluid {
+body .allBg .container-fluid {
   overflow: hidden;
   position: relative;
   padding-top: 10%;
   height: 100%;
 }
 
-body .container-fluid .container-fluid .scene {
+body .allBg .container-fluid .scene {
   width: 50%;
   height: 50%;
   position: absolute;
 }
 
-body .container-fluid .container-fluid .scene .bg-img {
+body .allBg .container-fluid .scene .bg-img {
   width: 500px;
   height: 500px;
   background-size: contain;
@@ -124,47 +124,47 @@ body .container-fluid .container-fluid .scene .bg-img {
 }
 
 @media screen and (max-width: 768px) {
-  body .container-fluid .container-fluid .scene .bg-img {
+  body .allBg .container-fluid .scene .bg-img {
     width: 300px;
     height: 300px;
   }
 }
 
-body .container-fluid .container-fluid #scene4 {
+body .allBg .container-fluid #scene4 {
   bottom: 5%;
   left: 12%;
 }
 
-body .container-fluid .container-fluid #scene5 {
+body .allBg .container-fluid #scene5 {
   bottom: 30%;
   left: 12%;
 }
 
-body .container-fluid .container-fluid #scene6 {
+body .allBg .container-fluid #scene6 {
   bottom: 35%;
   left: 50%;
 }
 
-body .container-fluid .container-fluid #scene7 {
+body .allBg .container-fluid #scene7 {
   bottom: 10%;
   left: 60%;
 }
 
-body .container-fluid .container-fluid .row {
+body .allBg .container-fluid .row {
   height: 75%;
 }
 
-body .container-fluid .container-fluid .row .col {
+body .allBg .container-fluid .row .col {
   height: 100%;
 }
 
 @media screen and (max-width: 991px) {
-  body .container-fluid .container-fluid .row .col {
+  body .allBg .container-fluid .row .col {
     max-height: 50%;
   }
 }
 
-body .container-fluid .container-fluid .row .col .scene_head {
+body .allBg .container-fluid .row .col .scene_head {
   height: 100%;
   -webkit-animation-name: jump;
           animation-name: jump;
@@ -174,7 +174,7 @@ body .container-fluid .container-fluid .row .col .scene_head {
           animation-iteration-count: infinite;
 }
 
-body .container-fluid .container-fluid .row .col .scene_head .bg-img {
+body .allBg .container-fluid .row .col .scene_head .bg-img {
   width: 100%;
   height: 100%;
   background-size: contain;
@@ -182,7 +182,7 @@ body .container-fluid .container-fluid .row .col .scene_head .bg-img {
   background-position: center;
 }
 
-body .container-fluid .container-fluid .conn {
+body .allBg .container-fluid .conn {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -194,7 +194,7 @@ body .container-fluid .container-fluid .conn {
   bottom: 10px;
 }
 
-body .container-fluid .container-fluid .conn .conn_btn {
+body .allBg .container-fluid .conn .conn_btn {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -202,17 +202,17 @@ body .container-fluid .container-fluid .conn .conn_btn {
       justify-content: space-around;
 }
 
-body .container-fluid .container-fluid .conn .conn_btn img {
+body .allBg .container-fluid .conn .conn_btn img {
   width: 220px;
 }
 
 @media screen and (max-width: 768px) {
-  body .container-fluid .container-fluid .conn .conn_btn img {
+  body .allBg .container-fluid .conn .conn_btn img {
     width: 100px;
   }
 }
 
-body .container-fluid .footer {
+body .allBg .footer {
   position: fixed;
   width: 100%;
   padding: 3px 0;

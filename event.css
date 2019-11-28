@@ -2,7 +2,7 @@ body {
   margin: 0;
 }
 
-body .container-fluid {
+body .top {
   padding-right: 0;
   padding-left: 0;
   width: 100%;
@@ -10,11 +10,11 @@ body .container-fluid {
   background-image: url("./img/pic2/BG.png");
 }
 
-body .container-fluid .navbar {
+body .top .navbar {
   background-image: url("./img/pic2/NAV.png");
 }
 
-body .container-fluid .navbar .container {
+body .top .navbar .container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -24,7 +24,7 @@ body .container-fluid .navbar .container {
       flex-wrap: nowrap;
 }
 
-body .container-fluid .navbar .container .navbar-brand {
+body .top .navbar .container .navbar-brand {
   height: 140px;
   width: 120px;
   background-image: url("./img/pic2/all.png");
@@ -40,12 +40,12 @@ body .container-fluid .navbar .container .navbar-brand {
 }
 
 @media screen and (max-width: 768px) {
-  body .container-fluid .navbar .container .navbar-brand {
+  body .top .navbar .container .navbar-brand {
     display: none;
   }
 }
 
-body .container-fluid .navbar .container .imgBox {
+body .top .navbar .container .imgBox {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -58,24 +58,24 @@ body .container-fluid .navbar .container .imgBox {
 }
 
 @media screen and (max-width: 768px) {
-  body .container-fluid .navbar .container .imgBox {
+  body .top .navbar .container .imgBox {
     display: none;
   }
 }
 
-body .container-fluid .navbar .container .selectBar {
+body .top .navbar .container .selectBar {
   display: none;
 }
 
 @media screen and (max-width: 768px) {
-  body .container-fluid .navbar .container .selectBar {
+  body .top .navbar .container .selectBar {
     display: block;
     background-image: url("./obj/select.png");
     width: 60px;
     height: 60px;
     position: relative;
   }
-  body .container-fluid .navbar .container .selectBar ul {
+  body .top .navbar .container .selectBar ul {
     position: absolute;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -87,13 +87,13 @@ body .container-fluid .navbar .container .selectBar {
     width: 200px;
     background-color: cornsilk;
   }
-  body .container-fluid .navbar .container .selectBar ul a {
+  body .top .navbar .container .selectBar ul a {
     text-align: center;
     font-size: 26px;
   }
 }
 
-body .container-fluid .navbar .container .bg-img {
+body .top .navbar .container .bg-img {
   height: 100%;
   width: 25%;
   -webkit-transition: 0.5s;
@@ -103,26 +103,26 @@ body .container-fluid .navbar .container .bg-img {
   background-position: center;
 }
 
-body .container-fluid .navbar .container .bg-img:hover {
+body .top .navbar .container .bg-img:hover {
   border-bottom: solid plum 10px;
 }
 
-body .container-fluid .start {
+body .top .start {
   width: 100%;
   height: 100vh;
 }
 
-body .container-fluid .container {
+body .top .eventAll {
   background-color: grey;
 }
 
-body .container-fluid .container .timeline {
+body .top .eventAll .event_box .timeline {
   position: relative;
   max-width: 1140px;
   margin: 0 auto;
 }
 
-body .container-fluid .container .timeline:after {
+body .top .eventAll .event_box .timeline:after {
   content: "";
   position: absolute;
   width: 6px;
@@ -133,13 +133,25 @@ body .container-fluid .container .timeline:after {
   margin-left: -3px;
 }
 
-body .container-fluid .container .timeline .container {
+@media screen and (max-width: 768px) {
+  body .top .eventAll .event_box .timeline:after {
+    left: 30px;
+  }
+}
+
+body .top .eventAll .event_box .timeline .container {
   padding: 10px 40px;
   position: relative;
   width: 50%;
 }
 
-body .container-fluid .container .timeline .container:after {
+@media screen and (max-width: 768px) {
+  body .top .eventAll .event_box .timeline .container {
+    width: 100%;
+  }
+}
+
+body .top .eventAll .event_box .timeline .container:after {
   content: "";
   position: absolute;
   width: 25px;
@@ -147,23 +159,29 @@ body .container-fluid .container .timeline .container:after {
   right: -13px;
   background-color: white;
   border: 4px solid #ff9f55;
-  top: 15px;
+  top: 20px;
   border-radius: 50%;
   z-index: 1;
 }
 
-body .container-fluid .container .timeline .container .content {
+body .top .eventAll .event_box .timeline .container .content {
   padding: 20px 30px;
   background-color: white;
   position: relative;
   border-radius: 6px;
 }
 
-body .container-fluid .container .timeline .container.left {
+body .top .eventAll .event_box .timeline .container.left {
   left: -25%;
 }
 
-body .container-fluid .container .timeline .container.left:before {
+@media screen and (max-width: 768px) {
+  body .top .eventAll .event_box .timeline .container.left {
+    left: 30px;
+  }
+}
+
+body .top .eventAll .event_box .timeline .container.left:before {
   content: " ";
   height: 0;
   position: absolute;
@@ -176,11 +194,31 @@ body .container-fluid .container .timeline .container.left:before {
   border-color: transparent transparent transparent white;
 }
 
-body .container-fluid .container .timeline .container.right {
+@media screen and (max-width: 768px) {
+  body .top .eventAll .event_box .timeline .container.left:before {
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
+    left: 30px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  body .top .eventAll .event_box .timeline .container.left:after {
+    left: -13px;
+  }
+}
+
+body .top .eventAll .event_box .timeline .container.right {
   left: 25%;
 }
 
-body .container-fluid .container .timeline .container.right:before {
+@media screen and (max-width: 768px) {
+  body .top .eventAll .event_box .timeline .container.right {
+    left: 30px;
+  }
+}
+
+body .top .eventAll .event_box .timeline .container.right:before {
   content: " ";
   height: 0;
   position: absolute;
@@ -193,11 +231,11 @@ body .container-fluid .container .timeline .container.right:before {
   border-color: transparent white transparent transparent;
 }
 
-body .container-fluid .container .timeline .container.right:after {
+body .top .eventAll .event_box .timeline .container.right:after {
   left: -13px;
 }
 
-body .container-fluid .footer {
+body .top .footer {
   position: fixed;
   width: 100%;
   padding: 3px;

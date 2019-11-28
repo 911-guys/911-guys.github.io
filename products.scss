@@ -46,33 +46,6 @@ body {
             display: none;
           }
         }
-        .selectBar {
-          display: none;
-          @media screen and (max-width: 768px) {
-            
-            display: block;
-            background-image: url("./obj/select.png");
-            width: 60px;
-            height: 60px;
-            position: relative;
-            ul {
-              position: absolute;
-              display: flex;
-              flex-wrap: wrap;
-              top: 70px;              
-              display: none;
-              width: 200px;
-              // height: 200px;
-              background-color: cornsilk;
-            }
-            ul a{
-              text-align: center;
-              font-size: 26px;
-            }
-
-           
-          }
-        }
         .bg-img {
           height: 100%;
           width: 25%;
@@ -137,6 +110,9 @@ body {
           border: #ee0a35 1px solid;
           height: 100%;
           // padding-left: 30px;
+          background-repeat: no-repeat;
+          background-size: cover;
+          background-position: center;
         }
         .layer2_r {
           display: flex;
@@ -147,6 +123,11 @@ body {
             width: 50%;
             height: 50%;
             padding: 15px;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            background: rgb(208,106,42);
+            background: linear-gradient(0deg, rgba(208,106,42,1) 0%, rgba(12,16,103,0.9920343137254902) 100%);
           }
         }
       }
@@ -159,6 +140,10 @@ body {
           .layer3 {
             border: #ee0a35 1px solid;
             height: 100%;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            z-index: 10;
           }
         }
         .layer3_backRect {
@@ -184,6 +169,10 @@ body {
           .layer4 {
             border: #ee0a35 1px solid;
             height: 100%;
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: center;
+            z-index:10;
           }
         }
         .layer4_group {
@@ -194,7 +183,10 @@ body {
           justify-content: space-between;
           .layer4_backRect {
             height: 100%;
-            background-color: salmon;
+            background-color: brown;
+            // flex-wrap: wrap;
+            background-repeat: no-repeat;
+            background-size: contain;
           }
         }
       }
@@ -203,22 +195,29 @@ body {
         // 
         .layer5PicBox{
           height: 100%;
-          
           display: flex;
           justify-content: space-between;
-          .layer5Pic{
-            height: 100%;
-          
-          border: darkmagenta solid 1px;
-          }
+          background-repeat: no-repeat;
+          background-size: contain; 
+          background-position: center;
+          // .layer5Pic{
+          // height: 100%;
+          // border: darkmagenta solid 1px;
+          // background-repeat: no-repeat;
+          // background-size: cover;
+          // background-position: center;
+          // }
         }
-        .layer5PicMid{
-          position: absolute;
-          left: 50%;
-          transform:translateX(-50%);
-          height: 100% ;         
-          background-color: darkgreen;
-        }
+        // .layer5PicMid{
+        //   position: absolute;
+        //   left: 50%;
+        //   transform:translateX(-50%);
+        //   height: 100% ;         
+        //   background-color: darkgreen;
+        //   background-repeat: no-repeat;
+        //   background-size: cover;
+        //   background-position: center;
+        // }
       }
       .swiper-container {
         // width: 100%;
@@ -231,6 +230,9 @@ body {
             display: flex;
             justify-content: center;
             align-items: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
             @media screen and (max-width: 768px) {
               height: 33vh;
             }

@@ -29,17 +29,9 @@
                         onclick="location.href='./products.html';"></div>
 
                 </div>
-                <div class="selectBar">
-                    <ul>
-                        <li><a href="./about.html">ABOUT</a></li>
-                        <li><a href="./album.html">ALBUM</a></li>
-                        <li><a href="./event.html">EVENTS</a></li>
-                        <li><a href="./products.html">PRODUCTS</a></li>
-                    </ul>
-                </div>
             </div>
         </nav>
-        <!-- <div class="box"></div> -->
+        <div class="box"></div>
 
         <div class="container-fluid">
 
@@ -54,31 +46,31 @@
             </div>
 
             <div class="row product_box box2">
-                <div class="layer2_l col-4"></div>
-                <div class="layer2_r col-8">
-                    <div class="layer2_r_item"></div>
-                    <div class="layer2_r_item"></div>
-                    <div class="layer2_r_item"></div>
-                    <div class="layer2_r_item"></div>
+                <div class="layer2_l col-4"><img src="./products/layer3_1.png" alt=""></div>
+                <div class="layer2_r col-8" >
+                    <div class="layer2_r_item"><img src="./products/layer3_2_top.png" alt=""></div>
+                    <div class="layer2_r_item"><img src="./products/layer3_3_top.png" alt=""></div>
+                    <div class="layer2_r_item"><img src="./products/layer3_2_bottom.png" alt=""></div>
+                    <div class="layer2_r_item"><img src="./products/layer3_3_bottom.png" alt=""></div>
                 </div>
             </div>
 
             <div class="row product_box box3">
                 <div class="layer3_cont">
-                    <div class="layer3 col-6"></div>
-                    <div class="layer3 col-6"></div>
+                    <div class="layer3 col-6"><img src="./products/layer4_1.png" alt=""></div>
+                    <div class="layer3 col-6"><img src="./products/layer4_2.png" alt=""></div>
                 </div>
                 <div class="layer3_backRect"></div>
             </div>
 
             <div class="product_box box4">
                 <div class="layer4_cont">
-                    <div class="layer4 col-6"></div>
-                    <div class="layer4 col-6"></div>
+                    <div class="layer4 col-6"><img src="./Products_pic/layer5_1.png" alt=""></div>
+                    <div class="layer4 col-6"><img src="./Products_pic/layer5_2.png" alt=""></div>
                 </div>
                 <div class="layer4_group row">
                     <div class="layer4_backRect col-2"></div>
-                    <div class="layer4_backRect col-6"></div>
+                    <div class="layer4_backRect col-6"><img src="./products/layer5_elves.png" alt=""></div>
                     <div class="layer4_backRect col-2"></div>
                 </div>
 
@@ -87,10 +79,10 @@
             </div>
 
             <div class="product_box box5">
-                <div class="layer5PicMid col-6"></div>
-                <div class="layer5PicBox col-12">
-                    <div class="layer5Pic col-5"></div>
-                    <div class="layer5Pic col-5"></div>
+                <!-- <div class="layer5PicMid col-6" style="background-image: url('./products/layer6_dog.png');"></div> -->
+                <div class="layer5PicBox col-12" style="background-image: url('./products/doge.png');">
+                    <!-- <div class="layer5Pic col-5" style="background-image: url('./products/layer6_1.png');"></div> -->
+                    <!-- <div class="layer5Pic col-4" style="background-image: url('./products/layer6_2.png');"></div> -->
                 </div>
 
 
@@ -98,11 +90,11 @@
 
             <div class="swiper-container product_box">
                 <div class="swiper-wrapper">
-                    <div class="swiper-slide">Slide 1</div>
-                    <div class="swiper-slide">Slide 2</div>
-                    <div class="swiper-slide">Slide 3</div>
-                    <div class="swiper-slide">Slide 4</div>
-                    <div class="swiper-slide">Slide 5</div>
+                    <div class="swiper-slide" style="background-image: url('./Products_pic/layer7.png');">Slide 1</div>
+                    <div class="swiper-slide" style="background-image: url('./Products_pic/layer7_2.png');">Slide 2</div>
+                    <div class="swiper-slide" style="background-image: url('./Products_pic/layer7_3.png');">Slide 3</div>
+                    <div class="swiper-slide" style="background-image: url('./Products_pic/layer7_4.png');">Slide 4</div>
+                    <div class="swiper-slide" style="background-image: url('./Products_pic/layer7_5.png');">Slide 5</div>
                 </div>
                 <div class="swiper-pagination"></div>
             </div>
@@ -126,8 +118,7 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
     <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
-   
-   <script>
+    <script>
         var swiper = new Swiper('.box1', {
             slidesPerView: 1,
             // spaceBetween: 30,
@@ -156,7 +147,6 @@
             },            
         });
     </script>
-    
 </body>
 
 </html>

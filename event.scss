@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  .container-fluid {
+  .top{
     padding-right: 0;
     padding-left: 0;
     // padding-top: 40px;
@@ -88,10 +88,12 @@ body {
       width: 100%;
       height: 100vh;
     }
-
-    .container {
-      background-color: grey;
-      .timeline {          //時間線 中間那條
+.eventAll{
+  background-color: grey;
+  .event_box {
+      
+      .timeline {
+        //時間線 中間那條
         position: relative;
         max-width: 1140px;
         margin: 0 auto;
@@ -104,12 +106,18 @@ body {
           bottom: 0;
           left: 50%;
           margin-left: -3px;
+          @media screen and (max-width: 768px) {
+            left: 30px;
+          }
         }
         .container {
           padding: 10px 40px;
           position: relative;
           // background-color: greenyellow;
           width: 50%;
+          @media screen and (max-width: 768px) {
+            width: 100%;
+          }
           &:after {
             content: "";
             position: absolute;
@@ -118,7 +126,7 @@ body {
             right: -13px;
             background-color: white;
             border: 4px solid #ff9f55;
-            top: 15px;
+            top: 20px;
             border-radius: 50%;
             z-index: 1;
           }
@@ -131,6 +139,9 @@ body {
         }
         .container.left {
           left: -25%;
+          @media screen and (max-width: 768px) {
+            left: 30px;
+          }
           &:before {
             content: " ";
             height: 0;
@@ -142,10 +153,23 @@ body {
             border: medium solid white;
             border-width: 10px 0 10px 10px;
             border-color: transparent transparent transparent white;
+            @media screen and (max-width: 768px) {
+              border-width: 10px 10px 10px 0;
+              border-color: transparent white transparent transparent;
+              left: 30px;
+            }
+          }
+          &:after {
+            @media screen and (max-width: 768px) {
+              left: -13px;
+            }
           }
         }
         .container.right {
           left: 25%;
+          @media screen and (max-width: 768px) {
+            left: 30px;
+          }
           &:before {
             content: " ";
             height: 0;
@@ -157,7 +181,6 @@ body {
             border: medium solid white;
             border-width: 10px 10px 10px 0;
             border-color: transparent white transparent transparent;
-            
           }
           &:after {
             left: -13px;
@@ -165,6 +188,8 @@ body {
         }
       }
     }
+}
+    
 
     .footer {
       position: fixed;

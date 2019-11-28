@@ -17,13 +17,22 @@
 
         <nav class="navbar navbar-expand-lg navbar-light fixed-top">
             <div class="container ">
-                <div class="selectBar">
-                    <ul>
-                        <li><a href="./about.html">ABOUT</a></li>
-                        <li><a href="./album.html">ALBUM</a></li>
-                        <li><a href="./event.html">EVENTS</a></li>
-                        <li><a href="./products.html">PRODUCTS</a></li>
-                    </ul>
+
+                <div class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        
+                    </a>
+                    <!-- ................................................... -->
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="./about.html">ABOUT</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="./album.html">ALBUM</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="./event.html">EVENT</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="./event.html">PRODUCTS</a>
+                    </div>
                 </div>
 
                 <a class="navbar-brand" href="./index.html"></a>
@@ -88,16 +97,18 @@
 
             <div class="conn">
                 <div id="fb" class="conn_btn">
-                    <div class="bg-img" style="background-image: url('./obj/fb.png');"
-                        onclick="location.href='https://www.facebook.com/JiuYiYi/';"></div>
+                    <a href="https://www.facebook.com/JiuYiYi/"></a><img src="./obj/fb.png" alt="">
+                
                 </div>
                 <div id="line" class="conn_btn">
-                    <div class="bg-img" style="background-image: url('./obj/line.png');"
-                        onclick="location.href='https://line.me/zh-hant/';"></div>
+                        <a href="https://www.facebook.com/JiuYiYi/"><img src="./obj/line.png" alt=""></a>
+                    <!-- <div class="bg-img" style="background-image: url('./obj/line.png');"
+                        onclick="location.href='https://line.me/zh-hant/';"></div> -->
                 </div>
                 <div id="ig" class="conn_btn">
-                    <div class="bg-img" style="background-image: url('./obj/ig.png');"
-                        onclick="location.href='https://www.instagram.com/911_eo/?hl=zh-tw';"></div>
+                        <a href="https://www.instagram.com/911_nineoneone/"><img src="./obj/ig.png" alt=""></a>
+                    <!-- <div class="bg-img" style="background-image: url('./obj/ig.png');"
+                        onclick="location.href='https://www.instagram.com/911_eo/?hl=zh-tw';"></div> -->
                 </div>
             </div>
 
@@ -140,15 +151,7 @@
     </script>
 
 
-    <script>
-
-        var clickBox = document.querySelector('.selectBar');
-        console.log(clickBox)
-        clickBox.onclick = function () {
-
-        }
-
-    </script>
+   
 </body>
 
 </html>

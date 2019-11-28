@@ -71,33 +71,20 @@ body .container-fluid .navbar .container .imgBox {
   }
 }
 
-body .container-fluid .navbar .container .selectBar {
+body .container-fluid .navbar .container .nav-item {
   display: none;
 }
 
 @media screen and (max-width: 768px) {
-  body .container-fluid .navbar .container .selectBar {
+  body .container-fluid .navbar .container .nav-item {
     display: block;
     background-image: url("./obj/select.png");
     width: 60px;
     height: 60px;
     position: relative;
   }
-  body .container-fluid .navbar .container .selectBar ul {
-    position: absolute;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    top: 70px;
-    display: none;
-    width: 200px;
-    background-color: cornsilk;
-  }
-  body .container-fluid .navbar .container .selectBar ul a {
-    text-align: center;
-    font-size: 26px;
+  body .container-fluid .navbar .container .nav-item .dropdown-toggle:after {
+    border-top: 0;
   }
 }
 
@@ -207,12 +194,22 @@ body .container-fluid .container-fluid .conn {
   bottom: 10px;
 }
 
-body .container-fluid .container-fluid .conn .conn_btn .bg-img {
-  width: 170px;
-  height: 170px;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
+body .container-fluid .container-fluid .conn .conn_btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+body .container-fluid .container-fluid .conn .conn_btn img {
+  width: 220px;
+}
+
+@media screen and (max-width: 768px) {
+  body .container-fluid .container-fluid .conn .conn_btn img {
+    width: 100px;
+  }
 }
 
 body .container-fluid .footer {

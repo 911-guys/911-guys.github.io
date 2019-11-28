@@ -5,10 +5,12 @@ body {
     padding-left: 0;
     // padding-top: 40px;
     width: 100%;
-    height: 100vh;
+    height: 100%;
     // background-color: #BBAA99;
-    background-image: url("./img/pic2/BG.png");
-
+    // background-image: url("./img/pic2/BG.png");
+    background: rgb(29, 14, 57);
+    background: linear-gradient(90deg, rgba(29, 14, 57, 1) 0%, rgba(196, 19, 188, 1) 47%, rgba(29, 14, 57, 1) 100%);
+    
     .navbar {
       width: 100%;
       background-image: url("./img/pic2/NAV.png");
@@ -63,12 +65,6 @@ body {
                 border-top: 0;
               }
             }
-
-            // &:hover ul {
-            //   /* flex-wrap: wrap; */
-            //   display: block;
-            //   /* background-color: aqua; */
-            // }
           }
         }
         // *************************************************************
@@ -86,23 +82,34 @@ body {
         }
       }
     }
-    // .box {
-    //   width: 100%;
-    //   height: 140px;
-    // }
+    .box {
+      @media screen and (max-width: 768px) {
+        width: 100%;
+        height: 120px;
+      }
+    }
     .container-fluid {
       .first_product_box {
         padding-top: 140px;
         width: 100%;
-        height: 100%;
+        height: 100vh;
         // background-color: burlywood;
         background-image: url("./Products_pic/layer1.png");
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
         // background-attachment: fixed;
+        @media screen and (max-width: 1280px) {
+          height: 75vh;
+          // margin-top: 60px;
+        }
         @media screen and (max-width: 768px) {
           height: 33vh;
+          // margin-top: 60px;
+        }
+        @media screen and (max-width: 375px) {
+          height: 25vh;
+          // margin-top: 60px;
         }
       }
       .product_box {
@@ -111,7 +118,7 @@ body {
         margin: 0 0 20px 0;
         border: black 1px solid;
         @media screen and (max-width: 768px) {
-          height: 33vh;
+          height: 27vh;
         }
       }
       .box1 {
@@ -119,7 +126,7 @@ body {
 
         .swiper-wrapper {
           .swiper-slide {
-            height: 90%;
+            height: 100%;
             background-repeat: no-repeat;
             background-size: cover;
             background-position: center;
@@ -135,25 +142,34 @@ body {
         .layer2_l {
           border: #ee0a35 1px solid;
           height: 100%;
-          // padding-left: 30px;
+          padding: 0px;
           background-repeat: no-repeat;
           background-size: cover;
           background-position: center;
+          img {
+            width: 100%;
+            height: auto;
+          }
         }
         .layer2_r {
           display: flex;
           flex-wrap: wrap;
           height: 100%;
+          padding: 0px;
           .layer2_r_item {
             border: #ee0a35 1px solid;
-            width: 50%;
-            height: 50%;
-            padding: 15px;
+            width: calc(50% - 20px);
+            height: calc(50% - 20px);
+            margin: 10px;
             background-repeat: no-repeat;
             background-size: cover;
             background-position: center;
-            background: rgb(208,106,42);
-            background: linear-gradient(0deg, rgba(208,106,42,1) 0%, rgba(12,16,103,0.9920343137254902) 100%);
+            background: rgb(208, 106, 42);
+            background: linear-gradient(0deg, rgba(208, 106, 42, 1) 0%, rgba(12, 16, 103, 0.9920343137254902) 100%);
+            img {
+              width: 100%;
+              height: auto;
+            }
           }
         }
       }
@@ -161,15 +177,19 @@ body {
         position: relative;
         .layer3_cont {
           display: flex;
-          height: 100%;
-          width: 100%;
+          max-width: 100%;
+          height: auto;
           .layer3 {
             border: #ee0a35 1px solid;
             height: 100%;
-            background-repeat: no-repeat;
-            background-size: cover;
-            background-position: center;
+            // background-repeat: no-repeat;
+            // background-size: cover;
+            // background-position: center;
             z-index: 10;
+            img {
+              width: 100%;
+              height: auto;
+            }
           }
         }
         .layer3_backRect {
@@ -198,7 +218,11 @@ body {
             background-repeat: no-repeat;
             background-size: contain;
             background-position: center;
-            z-index:10;
+            z-index: 10;
+            img {
+              width: 100%;
+              height: auto;
+            }
           }
         }
         .layer4_group {
@@ -214,36 +238,23 @@ body {
             background-repeat: no-repeat;
             background-size: contain;
           }
+          img {
+            width: 100%;
+            height: auto;
+          }
         }
       }
       .box5 {
         position: relative;
-        // 
-        .layer5PicBox{
+
+        .layer5PicBox {
           height: 100%;
           display: flex;
           justify-content: space-between;
           background-repeat: no-repeat;
-          background-size: contain; 
+          background-size: contain;
           background-position: center;
-          // .layer5Pic{
-          // height: 100%;
-          // border: darkmagenta solid 1px;
-          // background-repeat: no-repeat;
-          // background-size: cover;
-          // background-position: center;
-          // }
         }
-        // .layer5PicMid{
-        //   position: absolute;
-        //   left: 50%;
-        //   transform:translateX(-50%);
-        //   height: 100% ;         
-        //   background-color: darkgreen;
-        //   background-repeat: no-repeat;
-        //   background-size: cover;
-        //   background-position: center;
-        // }
       }
       .swiper-container {
         // width: 100%;
@@ -262,9 +273,12 @@ body {
             @media screen and (max-width: 768px) {
               height: 33vh;
             }
-
           }
         }
+        
+      }
+      .box_bot{
+        height: 30px;
       }
     }
 
@@ -276,6 +290,7 @@ body {
       background-color: #0c0a35;
       text-align: center;
       bottom: 0%;
+      z-index: 2222;
     }
   }
 }
@@ -293,8 +308,3 @@ body {
     background-image: url("./img/pic2/nw.png");
   }
 }
-
-// 100% {
-//     background-image: url('./img/pic2/all.png');
-// }
-// }

@@ -1,6 +1,10 @@
-body {
+html{
+  scroll-behavior: smooth;
+  body {
   margin: 0;
+  
   .top {
+    transition: 0.5s;
     padding-right: 0;
     padding-left: 0;
     // padding-top: 40px;
@@ -11,11 +15,6 @@ body {
     background: rgb(29, 14, 57);
     background: linear-gradient(90deg, rgba(29, 14, 57, 1) 0%, rgba(196, 19, 188, 1) 47%, rgba(29, 14, 57, 1) 100%);
 
-    .background{
-    background-image: url(./event/bgline.png);
-    background-repeat: no-repeat;
-          background-size: contain;
-          background-position: center;
     .navbar {
       width: 100%;
       background-image: url("./img/pic2/NAV.png");
@@ -93,138 +92,196 @@ body {
         }
       }
     }
+
     .start {
+      //start
+      transition: 1s;
+      display: flex;
+      justify-content: center;
+      // position: relative;
+      align-items: center;
       width: 100%;
-      height: 100vh;
+      height: 75vh;
+      img {
+        animation-name: startShine;
+        animation-duration: 1.2s;
+        animation-iteration-count: infinite;
+        width: 30%;
+        height: auto;
+        // position: absolute;
+        // margin: auto;
+        // top: 50%;
+        // // left: 50%;
+        // // transform: translateX(-50%);
+        // transform: translateY(-50%);
+        @media screen and (max-width: 768px) {
+          width: 50%;
+        }
+      }
+    }
+    #startword {
+      text-align: center;
+      color: aliceblue;
+      font-size: 42px;
+      padding: 10px;
+      @media screen and (max-width: 414px) {
+        font-size: 30px;
+      }
     }
     .eventAll {
       // background-color: grey;
-      .event_box {
-        .timeline {
-          //時間線 中間那條
-          position: relative;
-          max-width: 1140px;
-          margin: 0 auto;
-          &:after {
-            content: "";
-            position: absolute;
-            width: 6px;
-            background-color: white;
-            top: 0;
-            bottom: 0;
-            left: 50%;
-            margin-left: -3px;
-            @media screen and (max-width: 768px) {
-              left: 30px;
-            }
-          }
-          .container {
-            padding: 10px 40px;
+      .background {
+        background-image: url(./event/bgline.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+        @media screen and (max-width: 768px) {
+          background-image: url();
+        }
+        .event_box {
+          .timeline {
+            //時間線 中間那條
             position: relative;
-            // background-color: greenyellow;
-            width: 50%;
-            @media screen and (max-width: 768px) {
-              width: 100%;
-            }
+            max-width: 1140px;
+            margin: 0 auto;
             &:after {
               content: "";
               position: absolute;
-              width: 25px;
-              height: 25px;
-              right: -13px;
+              width: 6px;
               background-color: white;
-              border: 4px solid #ff9f55;
-              top: 20px;
-              border-radius: 50%;
-              z-index: 1;
-            }
-            .content {
-              padding: 20px 30px;
-              // background-color: white;
-              position: relative;
-              border-radius: 6px;
-              img {
-                width: 100%;
+              top: 0;
+              bottom: 0;
+              left: 50%;
+              margin-left: -3px;
+              @media screen and (max-width: 768px) {
+                left: 30px;
               }
             }
-          }
-          .container.left {
-            left: -25%;
-            @media screen and (max-width: 768px) {
-              left: 30px;
-            }
-            // &:before {
-            //   content: " ";
-            //   height: 0;
-            //   position: absolute;
-            //   top: 22px;
-            //   width: 0;
-            //   z-index: 1;
-            //   right: 30px;
-            //   border: medium solid white;
-            //   border-width: 10px 0 10px 10px;
-            //   border-color: transparent transparent transparent white;
-            //   @media screen and (max-width: 768px) {
-            //     border-width: 10px 10px 10px 0;
-            //     border-color: transparent white transparent transparent;
-            //     left: 30px;
-            //   }
-            // }
-            &:after {
+            .container {
+              padding: 0;
+              position: relative;
+              // background-color: greenyellow;
+              width: 50%;
+              font-size: 35px;
+              color: white;
               @media screen and (max-width: 768px) {
+                width: 100%;
+                font-size: 35px;
+                padding: 0;
+              }
+              @media screen and (max-width: 414px) {
+                width: 100%;
+                font-size: 20px;
+              }
+              &:after {
+                content: "";
+                position: absolute;
+                width: 25px;
+                height: 25px;
+                right: -13px;
+                background-color: white;
+                border: 4px solid #ff9f55;
+                top: 22px;
+                border-radius: 50%;
+                z-index: 1;
+              }
+              .content {
+                padding: 20px 30px;
+                // background-color: white;
+                position: relative;
+                border-radius: 6px;
+                img {
+                  width: 100%;
+                }
+              }
+            }
+            .container.left {
+              left: -25%;
+              @media screen and (max-width: 768px) {
+                left: 30px;
+              }
+              // &:before {
+              //   content: " ";
+              //   height: 0;
+              //   position: absolute;
+              //   top: 22px;
+              //   width: 0;
+              //   z-index: 1;
+              //   right: 30px;
+              //   border: medium solid white;
+              //   border-width: 10px 0 10px 10px;
+              //   border-color: transparent transparent transparent white;
+              //   @media screen and (max-width: 768px) {
+              //     border-width: 10px 10px 10px 0;
+              //     border-color: transparent white transparent transparent;
+              //     left: 30px;
+              //   }
+              // }
+              &:after {
+                @media screen and (max-width: 768px) {
+                  left: -13px;
+                }
+              }
+            }
+            .container.right {
+              left: 25%;
+              @media screen and (max-width: 768px) {
+                left: 30px;
+              }
+              // &:before {
+              //   content: " ";
+              //   height: 0;
+              //   position: absolute;
+              //   top: 22px;
+              //   width: 0;
+              //   z-index: 1;
+              //   left: 30px;
+              //   border: medium solid white;
+              //   border-width: 10px 10px 10px 0;
+              //   border-color: transparent white transparent transparent;
+              // }
+              &:after {
                 left: -13px;
               }
             }
           }
-          .container.right {
-            left: 25%;
-            @media screen and (max-width: 768px) {
-              left: 30px;
-            }
-            // &:before {
-            //   content: " ";
-            //   height: 0;
-            //   position: absolute;
-            //   top: 22px;
-            //   width: 0;
-            //   z-index: 1;
-            //   left: 30px;
-            //   border: medium solid white;
-            //   border-width: 10px 10px 10px 0;
-            //   border-color: transparent white transparent transparent;
-            // }
-            &:after {
-              left: -13px;
-            }
+        }
+      }
+
+      .loading {
+        display: flex;
+        justify-content: center;
+        @media screen and (max-width: 768px) {
+          justify-content: left;
+        }
+        img {
+          padding: 25px 0 0 0;
+          width: 50%;
+          @media screen and (max-width: 768px) {
+            width: 80%;
           }
         }
       }
-    }
 
-    .loading {
-      display: flex;
-      justify-content: center;
-      @media screen and (max-width: 768px){
-        justify-content: left;
+      .bottomPeo {
+        width: 100%;
+        img {
+          width: 100%;
+          height: auto;
+        }
       }
-      img {
-        padding: 0 0 20px 0;
-        width: 50%;
+
+      .footer {
+        position: fixed;
+        width: 100%;
+        padding: 3px;
+        color: azure;
+        background-color: #0c0a35;
+        text-align: center;
+        bottom: 0%;
+        z-index: 2000;
       }
     }
-
-    .footer {
-      position: fixed;
-      width: 100%;
-      padding: 3px;
-      color: azure;
-      background-color: #0c0a35;
-      text-align: center;
-      bottom: 0%;
-    }
-    }
-    
-
   }
 }
 @keyframes example {
@@ -241,5 +298,13 @@ body {
     background-image: url("./img/pic2/nw.png");
   }
 }
+@keyframes startShine {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
 
-
+}

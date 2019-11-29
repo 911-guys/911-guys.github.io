@@ -132,12 +132,13 @@ body .container-fluid .bgImg .bg_image {
   width: 110%;
   height: 110%;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
   background-position: center;
 }
 
 @media screen and (max-width: 1024px) {
   body .container-fluid .bgImg .bg_image {
+    background-size: cover;
     height: 75%;
   }
 }
@@ -369,7 +370,7 @@ body .container-fluid .footer {
     /*從 20% 的地方才開始變形*/
   }
   50% {
-    top: 50px;
+    top: -20px;
     /* border-bottom-right-radius:25px; */
   }
   80% {
@@ -390,7 +391,7 @@ body .container-fluid .footer {
     /*從 20% 的地方才開始變形*/
   }
   50% {
-    top: 50px;
+    top: -20px;
     /* border-bottom-right-radius:25px; */
   }
   80% {

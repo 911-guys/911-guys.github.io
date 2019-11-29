@@ -117,9 +117,10 @@ body {
         width: 110%;
         height: 110%;
         background-repeat: no-repeat;
-        background-size: cover;
+        background-size: contain;
         background-position: center;
         @media screen and (max-width: 1024px) {
+          background-size: cover; 
           height: 75%;
         }
         @media screen and (max-width: 768px) {
@@ -317,18 +318,20 @@ body {
 @keyframes jump {
   0% {
     top: 20px;
+    
   }
   20% {
     border-radius: 2px; /*從 20% 的地方才開始變形*/
   }
   50% {
-    top: 50px;
+    top: -20px;
     /* border-bottom-right-radius:25px; */
   }
   80% {
     border-radius: 2px; /*到 80% 的地方恢復原狀*/
   }
   100% {
+
     top: 20px;
   }
 }

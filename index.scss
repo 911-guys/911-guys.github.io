@@ -203,12 +203,14 @@ body {
 }
 @keyframes jump {
   0% {
+    transform:rotate(3deg);
     top: 20px;
   }
   20% {
     border-radius: 2px; /*從 20% 的地方才開始變形*/
   }
   50% {
+    transform:rotate(-3deg);
     top: 50px;
     /* border-bottom-right-radius:25px; */
   }
@@ -216,6 +218,7 @@ body {
     border-radius: 2px; /*到 80% 的地方恢復原狀*/
   }
   100% {
+    transform:rotate(3deg);
     top: 20px;
   }
 }

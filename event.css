@@ -1,8 +1,14 @@
-body {
+html {
+  scroll-behavior: smooth;
+}
+
+html body {
   margin: 0;
 }
 
-body .top {
+html body .top {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
   padding-right: 0;
   padding-left: 0;
   width: 100%;
@@ -12,19 +18,12 @@ body .top {
   background: linear-gradient(90deg, #1d0e39 0%, #c413bc 47%, #1d0e39 100%);
 }
 
-body .top .background {
-  background-image: url(./event/bgline.png);
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
-}
-
-body .top .background .navbar {
+html body .top .navbar {
   width: 100%;
   background-image: url("./img/pic2/NAV.png");
 }
 
-body .top .background .navbar .container {
+html body .top .navbar .container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -34,7 +33,7 @@ body .top .background .navbar .container {
       flex-wrap: nowrap;
 }
 
-body .top .background .navbar .container .navbar-brand {
+html body .top .navbar .container .navbar-brand {
   padding-top: 100px;
   height: 180px;
   width: 160px;
@@ -51,7 +50,7 @@ body .top .background .navbar .container .navbar-brand {
 }
 
 @media screen and (max-width: 768px) {
-  body .top .background .navbar .container .navbar-brand {
+  html body .top .navbar .container .navbar-brand {
     position: absolute;
     left: 50%;
     -webkit-transform: translateX(-50%);
@@ -59,7 +58,7 @@ body .top .background .navbar .container .navbar-brand {
   }
 }
 
-body .top .background .navbar .container .imgBox {
+html body .top .navbar .container .imgBox {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -72,29 +71,29 @@ body .top .background .navbar .container .imgBox {
 }
 
 @media screen and (max-width: 768px) {
-  body .top .background .navbar .container .imgBox {
+  html body .top .navbar .container .imgBox {
     display: none;
   }
 }
 
-body .top .background .navbar .container .nav-item {
+html body .top .navbar .container .nav-item {
   display: none;
 }
 
 @media screen and (max-width: 768px) {
-  body .top .background .navbar .container .nav-item {
+  html body .top .navbar .container .nav-item {
     display: block;
     background-image: url("./obj/select.png");
     width: 60px;
     height: 60px;
     position: relative;
   }
-  body .top .background .navbar .container .nav-item .dropdown-toggle:after {
+  html body .top .navbar .container .nav-item .dropdown-toggle:after {
     border-top: 0;
   }
 }
 
-body .top .background .navbar .container .bg-img {
+html body .top .navbar .container .bg-img {
   height: 100%;
   width: 25%;
   -webkit-transition: 0.5s;
@@ -104,22 +103,76 @@ body .top .background .navbar .container .bg-img {
   background-position: center;
 }
 
-body .top .background .navbar .container .bg-img:hover {
+html body .top .navbar .container .bg-img:hover {
   border-bottom: solid plum 10px;
 }
 
-body .top .background .start {
+html body .top .start {
+  -webkit-transition: 1s;
+  transition: 1s;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 100%;
-  height: 100vh;
+  height: 75vh;
 }
 
-body .top .background .eventAll .event_box .timeline {
+html body .top .start img {
+  -webkit-animation-name: startShine;
+          animation-name: startShine;
+  -webkit-animation-duration: 1.2s;
+          animation-duration: 1.2s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  width: 30%;
+  height: auto;
+}
+
+@media screen and (max-width: 768px) {
+  html body .top .start img {
+    width: 50%;
+  }
+}
+
+html body .top #startword {
+  text-align: center;
+  color: aliceblue;
+  font-size: 42px;
+  padding: 10px;
+}
+
+@media screen and (max-width: 414px) {
+  html body .top #startword {
+    font-size: 30px;
+  }
+}
+
+html body .top .eventAll .background {
+  background-image: url(./event/bgline.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+@media screen and (max-width: 768px) {
+  html body .top .eventAll .background {
+    background-image: url();
+  }
+}
+
+html body .top .eventAll .background .event_box .timeline {
   position: relative;
   max-width: 1140px;
   margin: 0 auto;
 }
 
-body .top .background .eventAll .event_box .timeline:after {
+html body .top .eventAll .background .event_box .timeline:after {
   content: "";
   position: absolute;
   width: 6px;
@@ -131,24 +184,35 @@ body .top .background .eventAll .event_box .timeline:after {
 }
 
 @media screen and (max-width: 768px) {
-  body .top .background .eventAll .event_box .timeline:after {
+  html body .top .eventAll .background .event_box .timeline:after {
     left: 30px;
   }
 }
 
-body .top .background .eventAll .event_box .timeline .container {
-  padding: 10px 40px;
+html body .top .eventAll .background .event_box .timeline .container {
+  padding: 0;
   position: relative;
   width: 50%;
+  font-size: 35px;
+  color: white;
 }
 
 @media screen and (max-width: 768px) {
-  body .top .background .eventAll .event_box .timeline .container {
+  html body .top .eventAll .background .event_box .timeline .container {
     width: 100%;
+    font-size: 35px;
+    padding: 0;
   }
 }
 
-body .top .background .eventAll .event_box .timeline .container:after {
+@media screen and (max-width: 414px) {
+  html body .top .eventAll .background .event_box .timeline .container {
+    width: 100%;
+    font-size: 20px;
+  }
+}
+
+html body .top .eventAll .background .event_box .timeline .container:after {
   content: "";
   position: absolute;
   width: 25px;
@@ -156,52 +220,52 @@ body .top .background .eventAll .event_box .timeline .container:after {
   right: -13px;
   background-color: white;
   border: 4px solid #ff9f55;
-  top: 20px;
+  top: 22px;
   border-radius: 50%;
   z-index: 1;
 }
 
-body .top .background .eventAll .event_box .timeline .container .content {
+html body .top .eventAll .background .event_box .timeline .container .content {
   padding: 20px 30px;
   position: relative;
   border-radius: 6px;
 }
 
-body .top .background .eventAll .event_box .timeline .container .content img {
+html body .top .eventAll .background .event_box .timeline .container .content img {
   width: 100%;
 }
 
-body .top .background .eventAll .event_box .timeline .container.left {
+html body .top .eventAll .background .event_box .timeline .container.left {
   left: -25%;
 }
 
 @media screen and (max-width: 768px) {
-  body .top .background .eventAll .event_box .timeline .container.left {
+  html body .top .eventAll .background .event_box .timeline .container.left {
     left: 30px;
   }
 }
 
 @media screen and (max-width: 768px) {
-  body .top .background .eventAll .event_box .timeline .container.left:after {
+  html body .top .eventAll .background .event_box .timeline .container.left:after {
     left: -13px;
   }
 }
 
-body .top .background .eventAll .event_box .timeline .container.right {
+html body .top .eventAll .background .event_box .timeline .container.right {
   left: 25%;
 }
 
 @media screen and (max-width: 768px) {
-  body .top .background .eventAll .event_box .timeline .container.right {
+  html body .top .eventAll .background .event_box .timeline .container.right {
     left: 30px;
   }
 }
 
-body .top .background .eventAll .event_box .timeline .container.right:after {
+html body .top .eventAll .background .event_box .timeline .container.right:after {
   left: -13px;
 }
 
-body .top .background .loading {
+html body .top .eventAll .loading {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -211,19 +275,34 @@ body .top .background .loading {
 }
 
 @media screen and (max-width: 768px) {
-  body .top .background .loading {
+  html body .top .eventAll .loading {
     -webkit-box-pack: left;
         -ms-flex-pack: left;
             justify-content: left;
   }
 }
 
-body .top .background .loading img {
-  padding: 0 0 20px 0;
+html body .top .eventAll .loading img {
+  padding: 25px 0 0 0;
   width: 50%;
 }
 
-body .top .background .footer {
+@media screen and (max-width: 768px) {
+  html body .top .eventAll .loading img {
+    width: 80%;
+  }
+}
+
+html body .top .eventAll .bottomPeo {
+  width: 100%;
+}
+
+html body .top .eventAll .bottomPeo img {
+  width: 100%;
+  height: auto;
+}
+
+html body .top .eventAll .footer {
   position: fixed;
   width: 100%;
   padding: 3px;
@@ -231,6 +310,7 @@ body .top .background .footer {
   background-color: #0c0a35;
   text-align: center;
   bottom: 0%;
+  z-index: 2000;
 }
 
 @-webkit-keyframes example {
@@ -260,6 +340,24 @@ body .top .background .footer {
   }
   100% {
     background-image: url("./img/pic2/nw.png");
+  }
+}
+
+@-webkit-keyframes startShine {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes startShine {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
   }
 }
 /*# sourceMappingURL=event.css.map */

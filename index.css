@@ -254,6 +254,8 @@ body .allBg .footer {
 
 @-webkit-keyframes jump {
   0% {
+    -webkit-transform: rotate(3deg);
+            transform: rotate(3deg);
     top: 20px;
   }
   20% {
@@ -261,6 +263,8 @@ body .allBg .footer {
     /*從 20% 的地方才開始變形*/
   }
   50% {
+    -webkit-transform: rotate(-3deg);
+            transform: rotate(-3deg);
     top: 50px;
     /* border-bottom-right-radius:25px; */
   }
@@ -269,12 +273,16 @@ body .allBg .footer {
     /*到 80% 的地方恢復原狀*/
   }
   100% {
+    -webkit-transform: rotate(3deg);
+            transform: rotate(3deg);
     top: 20px;
   }
 }
 
 @keyframes jump {
   0% {
+    -webkit-transform: rotate(3deg);
+            transform: rotate(3deg);
     top: 20px;
   }
   20% {
@@ -282,6 +290,8 @@ body .allBg .footer {
     /*從 20% 的地方才開始變形*/
   }
   50% {
+    -webkit-transform: rotate(-3deg);
+            transform: rotate(-3deg);
     top: 50px;
     /* border-bottom-right-radius:25px; */
   }
@@ -290,6 +300,8 @@ body .allBg .footer {
     /*到 80% 的地方恢復原狀*/
   }
   100% {
+    -webkit-transform: rotate(3deg);
+            transform: rotate(3deg);
     top: 20px;
   }
 }

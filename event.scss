@@ -10,7 +10,12 @@ body {
     // background-image: url("./img/pic2/BG.png");
     background: rgb(29, 14, 57);
     background: linear-gradient(90deg, rgba(29, 14, 57, 1) 0%, rgba(196, 19, 188, 1) 47%, rgba(29, 14, 57, 1) 100%);
-    
+
+    .background{
+    background-image: url(./event/bgline.png);
+    background-repeat: no-repeat;
+          background-size: cover;
+          background-position: center;
     .navbar {
       width: 100%;
       background-image: url("./img/pic2/NAV.png");
@@ -217,6 +222,9 @@ body {
       text-align: center;
       bottom: 0%;
     }
+    }
+    
+
   }
 }
 @keyframes example {
@@ -234,7 +242,4 @@ body {
   }
 }
 
-// 100% {
-//     background-image: url('./img/pic2/all.png');
-// }
-// }
+

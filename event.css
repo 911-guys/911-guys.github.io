@@ -12,12 +12,19 @@ body .top {
   background: linear-gradient(90deg, #1d0e39 0%, #c413bc 47%, #1d0e39 100%);
 }
 
-body .top .navbar {
+body .top .background {
+  background-image: url(./event/bgline.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+body .top .background .navbar {
   width: 100%;
   background-image: url("./img/pic2/NAV.png");
 }
 
-body .top .navbar .container {
+body .top .background .navbar .container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -27,7 +34,7 @@ body .top .navbar .container {
       flex-wrap: nowrap;
 }
 
-body .top .navbar .container .navbar-brand {
+body .top .background .navbar .container .navbar-brand {
   padding-top: 100px;
   height: 180px;
   width: 160px;
@@ -44,7 +51,7 @@ body .top .navbar .container .navbar-brand {
 }
 
 @media screen and (max-width: 768px) {
-  body .top .navbar .container .navbar-brand {
+  body .top .background .navbar .container .navbar-brand {
     position: absolute;
     left: 50%;
     -webkit-transform: translateX(-50%);
@@ -52,7 +59,7 @@ body .top .navbar .container .navbar-brand {
   }
 }
 
-body .top .navbar .container .imgBox {
+body .top .background .navbar .container .imgBox {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -65,29 +72,29 @@ body .top .navbar .container .imgBox {
 }
 
 @media screen and (max-width: 768px) {
-  body .top .navbar .container .imgBox {
+  body .top .background .navbar .container .imgBox {
     display: none;
   }
 }
 
-body .top .navbar .container .nav-item {
+body .top .background .navbar .container .nav-item {
   display: none;
 }
 
 @media screen and (max-width: 768px) {
-  body .top .navbar .container .nav-item {
+  body .top .background .navbar .container .nav-item {
     display: block;
     background-image: url("./obj/select.png");
     width: 60px;
     height: 60px;
     position: relative;
   }
-  body .top .navbar .container .nav-item .dropdown-toggle:after {
+  body .top .background .navbar .container .nav-item .dropdown-toggle:after {
     border-top: 0;
   }
 }
 
-body .top .navbar .container .bg-img {
+body .top .background .navbar .container .bg-img {
   height: 100%;
   width: 25%;
   -webkit-transition: 0.5s;
@@ -97,22 +104,22 @@ body .top .navbar .container .bg-img {
   background-position: center;
 }
 
-body .top .navbar .container .bg-img:hover {
+body .top .background .navbar .container .bg-img:hover {
   border-bottom: solid plum 10px;
 }
 
-body .top .start {
+body .top .background .start {
   width: 100%;
   height: 100vh;
 }
 
-body .top .eventAll .event_box .timeline {
+body .top .background .eventAll .event_box .timeline {
   position: relative;
   max-width: 1140px;
   margin: 0 auto;
 }
 
-body .top .eventAll .event_box .timeline:after {
+body .top .background .eventAll .event_box .timeline:after {
   content: "";
   position: absolute;
   width: 6px;
@@ -124,24 +131,24 @@ body .top .eventAll .event_box .timeline:after {
 }
 
 @media screen and (max-width: 768px) {
-  body .top .eventAll .event_box .timeline:after {
+  body .top .background .eventAll .event_box .timeline:after {
     left: 30px;
   }
 }
 
-body .top .eventAll .event_box .timeline .container {
+body .top .background .eventAll .event_box .timeline .container {
   padding: 10px 40px;
   position: relative;
   width: 50%;
 }
 
 @media screen and (max-width: 768px) {
-  body .top .eventAll .event_box .timeline .container {
+  body .top .background .eventAll .event_box .timeline .container {
     width: 100%;
   }
 }
 
-body .top .eventAll .event_box .timeline .container:after {
+body .top .background .eventAll .event_box .timeline .container:after {
   content: "";
   position: absolute;
   width: 25px;
@@ -154,47 +161,47 @@ body .top .eventAll .event_box .timeline .container:after {
   z-index: 1;
 }
 
-body .top .eventAll .event_box .timeline .container .content {
+body .top .background .eventAll .event_box .timeline .container .content {
   padding: 20px 30px;
   position: relative;
   border-radius: 6px;
 }
 
-body .top .eventAll .event_box .timeline .container .content img {
+body .top .background .eventAll .event_box .timeline .container .content img {
   width: 100%;
 }
 
-body .top .eventAll .event_box .timeline .container.left {
+body .top .background .eventAll .event_box .timeline .container.left {
   left: -25%;
 }
 
 @media screen and (max-width: 768px) {
-  body .top .eventAll .event_box .timeline .container.left {
+  body .top .background .eventAll .event_box .timeline .container.left {
     left: 30px;
   }
 }
 
 @media screen and (max-width: 768px) {
-  body .top .eventAll .event_box .timeline .container.left:after {
+  body .top .background .eventAll .event_box .timeline .container.left:after {
     left: -13px;
   }
 }
 
-body .top .eventAll .event_box .timeline .container.right {
+body .top .background .eventAll .event_box .timeline .container.right {
   left: 25%;
 }
 
 @media screen and (max-width: 768px) {
-  body .top .eventAll .event_box .timeline .container.right {
+  body .top .background .eventAll .event_box .timeline .container.right {
     left: 30px;
   }
 }
 
-body .top .eventAll .event_box .timeline .container.right:after {
+body .top .background .eventAll .event_box .timeline .container.right:after {
   left: -13px;
 }
 
-body .top .loading {
+body .top .background .loading {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -204,19 +211,19 @@ body .top .loading {
 }
 
 @media screen and (max-width: 768px) {
-  body .top .loading {
+  body .top .background .loading {
     -webkit-box-pack: left;
         -ms-flex-pack: left;
             justify-content: left;
   }
 }
 
-body .top .loading img {
+body .top .background .loading img {
   padding: 0 0 20px 0;
   width: 50%;
 }
 
-body .top .footer {
+body .top .background .footer {
   position: fixed;
   width: 100%;
   padding: 3px;

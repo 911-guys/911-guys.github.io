@@ -24,9 +24,9 @@
             <div class="container ">
 
                 <div class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button"
-                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        
+                    <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+
                     </a>
                     <!-- ................................................... -->
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -62,7 +62,7 @@
         <div class="container">
             <div class="row ">
                 <!-- ------------------------------------------------------------------- -->
-                
+
                 <div class="people_area col-4">
                     <div id="people1_group" class="people_group">
                         <div class="bg-img" style="background-image: url('./about/peo1.png');"></div>
@@ -87,10 +87,10 @@
                 <!-- ------------------------------------------------------------ -->
                 <div class="people_container col-12 p-3">
 
-                    <div id="peoAndAura1" class="peoAndAura">
-                        <div class="people" style="background-image: url('./about_in/peo1in.png');"></div>
-                        <div class="people" style="background-image: url('./about_in/super2.gif');"></div>
-                    </div>
+                    <!-- <div id="peoAndAura1" class="peoAndAura"> -->
+                    <div class="people" style="background-image: url('./about_in/peo1in.png');"></div>
+                    <!-- <div class="people" style="background-image: url('./about_in/super2.gif');"></div> -->
+                    <!-- </div> -->
 
                     <div class="people_text">洋蔥(陳皓宇) <p>1991年6月8日（28歲）
                             <p>Vocal
@@ -98,17 +98,17 @@
                     </div>
                     <div class="people_line" style="background-image: url('./about_in/peo1in_line.png');">
                     </div>
-                    <!-- <div class="esc"><img src="./obj/close.png" alt=""></div> -->
-                    
+                    <div class="esc"><img src="./obj/close.png" alt=""></div>
+
                 </div>
 
 
 
                 <div class="people_container col-12 p-3">
-                    <div id="peoAndAura2" class="peoAndAura">
-                        <div class="people" style="background-image: url('./about_in/peo2in.png');"></div>
-                        <div class="people" style="background-image: url('./about_in/super2.gif');"></div>
-                    </div>
+                    <!-- <div id="peoAndAura2" class="peoAndAura"> -->
+                    <div class="people" style="background-image: url('./about_in/peo2in.png');"></div>
+                    <!-- <div class="people" style="background-image: url('./about_in/super2.gif');"></div> -->
+                    <!-- </div> -->
 
                     <div class="people_text">健志(廖建至) <p>1993年8月16日（26歲）
                             <p>Rap
@@ -123,10 +123,10 @@
 
 
                 <div class="people_container  col-12 p-3">
-                    <div id="peoAndAura3" class="peoAndAura">
-                        <div class="people" style="background-image: url('./about_in/peo3in.png');"></div>
-                        <div class="people" style="background-image: url('./about_in/super2.gif');"></div>
-                    </div>
+                    <!-- <div id="peoAndAura3" class="peoAndAura"> -->
+                    <div class="people" style="background-image: url('./about_in/peo3in.png');"></div>
+                    <!-- <div class="people" style="background-image: url('./about_in/super2.gif');"></div> -->
+                    <!-- </div> -->
                     <!-- <div class="peoAndAura"></div> -->
                     <div class="people_text">春風(洪瑜鴻) <p>1986年10月9日（33歲）
                             <p>團長
@@ -168,12 +168,12 @@
         var parallaxInstance = new Parallax(people2_group);
         var people3_group = document.getElementById('people3_group');
         var parallaxInstance = new Parallax(people3_group);
-        var peoAndAura3 = document.getElementById('peoAndAura3');
-        var parallaxInstance = new Parallax(peoAndAura3);
-        var peoAndAura2 = document.getElementById('peoAndAura2');
-        var parallaxInstance = new Parallax(peoAndAura2);
-        var peoAndAura1 = document.getElementById('peoAndAura1');
-        var parallaxInstance = new Parallax(peoAndAura1);
+        // var peoAndAura3 = document.getElementById('peoAndAura3');
+        // var parallaxInstance = new Parallax(peoAndAura3);
+        // var peoAndAura2 = document.getElementById('peoAndAura2');
+        // var parallaxInstance = new Parallax(peoAndAura2);
+        // var peoAndAura1 = document.getElementById('peoAndAura1');
+        // var parallaxInstance = new Parallax(peoAndAura1);
         var bg_img = document.getElementById('bg_img');
         var parallaxInstance = new Parallax(bg_img);
     </script>
@@ -184,19 +184,19 @@
         var people_container = document.querySelectorAll('.people_container');
         var esc = document.querySelectorAll('.esc');
         console.log(esc);
-        
+
         people_area.forEach((element, index) => {
             element.onclick = function () {
                 people_container[index].classList.add('active');
             }
 
         });
-  
-            esc.forEach((element,index) => {
-                element.onclick=function(){
-                    people_container[index].classList.remove('active');
-                }
-            });
+
+        esc.forEach((element, index) => {
+            element.onclick = function () {
+                people_container[index].classList.remove('active');
+            }
+        });
 
     </script>
 

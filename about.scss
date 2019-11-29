@@ -18,7 +18,7 @@ body {
     .navbar {
       width: 100%;
       background-image: url("./img/pic2/NAV.png");
-      padding:0;
+      padding: 0;
       .container {
         display: flex;
         height: 100px;
@@ -134,23 +134,40 @@ body {
       .row {
         position: relative;
         height: 100%;
-        // @media screen and (max-width: 991px) {
-        //   height: 80%;
-        // }
 
-        .people_group {
-          width: 100%;
-          height: 100%;
-          animation-name: jump;
-          animation-duration: 2.2s;
-          animation-iteration-count: infinite;
-          
-          .bg-img {
+        @media screen and (max-width: 1024px) {
+          height: 80%;
+        }
+        .people_area {
+          cursor: pointer;
+          &:hover .people_group{
+              filter: brightness(1) blur(0px);
+            }
+          .people_group {
             width: 100%;
             height: 100%;
-            background-repeat: no-repeat;
-            background-size: contain;
-            background-position: center;
+            animation-name: jump;
+            animation-duration: 2.2s;
+            animation-iteration-count: infinite;
+            cursor: pointer;
+            filter: brightness(0.5) blur(1px);
+            
+
+            .bg-img {
+              width: 100%;
+              height: 100%;
+              background-repeat: no-repeat;
+              background-size: contain;
+              background-position: center;
+
+              // filter: brightness(0.8) blur(2px);
+              // &:hover{
+              //   filter: brightness(0.5) blur(0px);
+              // }
+            }
+            // .bg-img:hover{
+
+            //   }
           }
         }
 
@@ -165,22 +182,22 @@ body {
           background-image: url("./about_in/smallbg.png");
           // width: 100%;
           background-repeat: no-repeat;
-          background-size: contain;
+          background-size: cover;
           background-position: center;
-          height: 100%;
+          height: 80%;
           display: flex;
 
-          .peoAndAura {
-            height: 100%;
-            width: 20%;
+          // .peoAndAura {
+          //   height: 100%;
+          //   width: 20%;
             .people {
-              width: 100%;
-              height: 100%;
+              width: 20%;
+              height:100%;
               background-size: cover;
               background-repeat: no-repeat;
               background-position: center;
             }
-          }
+          // }
           .people_text {
             // text-align: center;
             font-size: 35px;
@@ -189,13 +206,17 @@ body {
             // height: 100%;
             width: 45%;
             color: beige;
-            top: 50%;
+            // top: 50%;
             @media screen and (max-width: 1024px) {
               font-size: 20px;
             }
-            @media screen and (max-width: 414px) {
-              font-size: 13px;
+            @media screen and (max-width: 768px) {
+              font-size: 15px;
             }
+            @media screen and (max-width: 414px) {
+              font-size: 11px;
+            }
+            
           }
           .people_line {
             height: 100%;
@@ -204,16 +225,11 @@ body {
             background-repeat: no-repeat;
             background-size: contain;
             background-position: center;
-            // &:after {
-            //   content: "";
-            //   position: absolute;
-            //   left: -40px;
-            //   background-image: url(./obj/close.png);
-            // }
           }
           .esc {
             position: absolute;
-            // left: 95%;
+            cursor: pointer;
+            left: 95%;
           }
         }
       }

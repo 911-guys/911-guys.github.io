@@ -9,7 +9,6 @@ body .people_container {
 }
 
 body .container-fluid {
-  overflow: hidden;
   position: relative;
   padding-right: 0;
   padding-left: 0;
@@ -18,26 +17,10 @@ body .container-fluid {
   background-image: url("./img/pic2/BG.png");
 }
 
-body .container-fluid #bg_img {
-  top: -5%;
-  left: -10%;
-  position: absolute;
-  overflow: hidden;
-  height: 110%;
-  width: 110%;
-}
-
-body .container-fluid #bg_img .bg_image {
-  width: 110%;
-  height: 110%;
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
-}
-
 body .container-fluid .navbar {
   width: 100%;
   background-image: url("./img/pic2/NAV.png");
+  padding: 0;
 }
 
 body .container-fluid .navbar .container {
@@ -124,9 +107,38 @@ body .container-fluid .navbar .container .bg-img:hover {
   border-bottom: solid plum 10px;
 }
 
+body .container-fluid .bgImg {
+  top: -5%;
+  left: -10%;
+  position: absolute;
+  overflow: hidden;
+  height: 110%;
+  width: 110%;
+}
+
+body .container-fluid .bgImg .bg_image {
+  width: 110%;
+  height: 110%;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+@media screen and (max-width: 1024px) {
+  body .container-fluid .bgImg .bg_image {
+    height: 75%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  body .container-fluid .bgImg .bg_image {
+    height: 50%;
+  }
+}
+
 body .container-fluid .box {
   width: 100%;
-  height: 140px;
+  height: 100px;
 }
 
 body .container-fluid .container {
@@ -165,7 +177,9 @@ body .container-fluid .container .row .people_container {
 }
 
 body .container-fluid .container .row .people_container.active {
+  position: relative;
   position: absolute;
+  margin-top: 40px;
   background-image: url("./about_in/smallbg.png");
   background-repeat: no-repeat;
   background-size: contain;
@@ -191,18 +205,52 @@ body .container-fluid .container .row .people_container.active .peoAndAura .peop
 
 body .container-fluid .container .row .people_container.active .people_text {
   font-size: 35px;
-  padding: 50px;
   width: 45%;
   color: beige;
   top: 50%;
 }
 
+@media screen and (max-width: 1024px) {
+  body .container-fluid .container .row .people_container.active .people_text {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  body .container-fluid .container .row .people_container.active .people_text {
+    font-size: 13px;
+  }
+}
+
 body .container-fluid .container .row .people_container.active .people_line {
   height: 100%;
   width: 35%;
+  position: relative;
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
+}
+
+body .container-fluid .container .row .people_container.active .esc {
+  position: absolute;
+}
+
+@media screen and (max-width: 1280px) {
+  body .container-fluid .container {
+    height: calc(100% - 140px);
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  body .container-fluid .container {
+    height: calc(75% - 140px);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  body .container-fluid .container {
+    height: calc(50% - 140px);
+  }
 }
 
 body .container-fluid .history {

@@ -62,26 +62,28 @@
         <div class="container">
             <div class="row ">
                 <!-- ------------------------------------------------------------------- -->
-                <div class="people_area col-4 p-3">
+                
+                <div class="people_area col-4">
                     <div id="people1_group" class="people_group">
                         <div class="bg-img" style="background-image: url('./about/peo1.png');"></div>
                         <div class="bg-img" style="background-image: url('./about/peo1line.png');"></div>
                     </div>
                 </div>
 
-                <div class="people_area col-4 p-3">
+                <div class="people_area col-4">
                     <div id="people2_group" class="people_group">
                         <div class="bg-img" style="background-image: url('./about/peo2.png');"></div>
                         <div class="bg-img" style="background-image: url('./about/peo2line.png');"></div>
                     </div>
                 </div>
 
-                <div class="people_area col-4 p-3">
+                <div class="people_area col-4">
                     <div id="people3_group" class="people_group">
                         <div class="bg-img" style="background-image: url('./about/peo3.png');"></div>
                         <div class="bg-img" style="background-image: url('./about/peo3line.png');"></div>
                     </div>
                 </div>
+
                 <!-- ------------------------------------------------------------ -->
                 <div class="people_container col-12 p-3">
 
@@ -96,6 +98,8 @@
                     </div>
                     <div class="people_line" style="background-image: url('./about_in/peo1in_line.png');">
                     </div>
+                    <!-- <div class="esc"><img src="./obj/close.png" alt=""></div> -->
+                    
                 </div>
 
 
@@ -114,6 +118,7 @@
                     </div>
                     <div class="people_line" style="background-image: url('./about_in/peo2in_line.png');">
                     </div>
+                    <div class="esc"><img src="./obj/close.png" alt=""></div>
                 </div>
 
 
@@ -129,13 +134,14 @@
                                     因猜拳獲勝而成為團長。</div>
                     <div class="people_line" style="background-image: url('./about_in/peo3in_line.png');">
                     </div>
+                    <div class="esc"><img src="./obj/close.png" alt=""></div>
                 </div>
                 <!-- gif有問題 -->
                 <!-- ------------------------------------------------------------ -->
             </div>
         </div>
 
-        <!-- <div class="history"></div> -->
+        <div class="history"></div>
 
         <div class="footer">
             Copyright © 玖壹壹
@@ -176,20 +182,21 @@
 
         var people_area = document.querySelectorAll('.people_area');
         var people_container = document.querySelectorAll('.people_container');
-
+        var esc = document.querySelectorAll('.esc');
+        console.log(esc);
+        
         people_area.forEach((element, index) => {
             element.onclick = function () {
                 people_container[index].classList.add('active');
             }
 
         });
-        people_container.forEach((element, index) => {
-            element.onmouseout = function () {
-                people_container[index].classList.remove('active');
-            }
-
-        });
-
+  
+            esc.forEach((element,index) => {
+                element.onclick=function(){
+                    people_container[index].classList.remove('active');
+                }
+            });
 
     </script>
 

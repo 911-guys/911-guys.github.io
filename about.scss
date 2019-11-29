@@ -5,7 +5,7 @@ body {
     width: 100%;
   }
   .container-fluid {
-    overflow: hidden;
+    // overflow: hidden;
 
     position: relative;
     padding-right: 0;
@@ -15,29 +15,10 @@ body {
     height: 100vh;
     // background-color: #BBAA99;
     background-image: url("./img/pic2/BG.png");
-
-    #bg_img {
-      top: -5%;
-      left: -10%;
-      position: absolute;
-      overflow: hidden;
-      height: 110%;
-      width: 110%;
-      .bg_image {
-        // overflow: hidden;
-
-        width: 110%;
-        height: 110%;
-        background-repeat: no-repeat;
-        background-size: contain;
-        background-position: center;
-      }
-    }
-
     .navbar {
       width: 100%;
       background-image: url("./img/pic2/NAV.png");
-
+      padding:0;
       .container {
         display: flex;
         height: 100px;
@@ -111,23 +92,59 @@ body {
         }
       }
     }
+
+    .bgImg {
+      //月球跟線
+      top: -5%;
+      left: -10%;
+      position: absolute;
+      overflow: hidden;
+      height: 110%;
+      width: 110%;
+      @media screen and (max-width: 1024px) {
+        // padding-top: 60px;
+        // height: 50%;
+      }
+      .bg_image {
+        width: 110%;
+        height: 110%;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+        @media screen and (max-width: 1024px) {
+          height: 75%;
+        }
+        @media screen and (max-width: 768px) {
+          // padding-top: 60px;
+          height: 50%;
+        }
+      }
+    }
+
     .box {
       width: 100%;
-      height: 140px;
+      height: 100px;
     }
-    .container{
+
+    .container {
       width: 100%;
       height: calc(100% - 140px);
       transition: 2s;
+
       .row {
         position: relative;
         height: 100%;
+        // @media screen and (max-width: 991px) {
+        //   height: 80%;
+        // }
+
         .people_group {
           width: 100%;
           height: 100%;
           animation-name: jump;
           animation-duration: 2.2s;
           animation-iteration-count: infinite;
+          
           .bg-img {
             width: 100%;
             height: 100%;
@@ -142,8 +159,9 @@ body {
           // transition:5s;
         }
         .people_container.active {
-          // position: relative;
+          position: relative;
           position: absolute;
+          margin-top: 40px;
           background-image: url("./about_in/smallbg.png");
           // width: 100%;
           background-repeat: no-repeat;
@@ -151,6 +169,7 @@ body {
           background-position: center;
           height: 100%;
           display: flex;
+
           .peoAndAura {
             height: 100%;
             width: 20%;
@@ -165,24 +184,52 @@ body {
           .people_text {
             // text-align: center;
             font-size: 35px;
-            padding: 50px;
+            // padding: 50px;
             // position: absolute;
             // height: 100%;
             width: 45%;
             color: beige;
             top: 50%;
+            @media screen and (max-width: 1024px) {
+              font-size: 20px;
+            }
+            @media screen and (max-width: 414px) {
+              font-size: 13px;
+            }
           }
           .people_line {
             height: 100%;
             width: 35%;
+            position: relative;
             background-repeat: no-repeat;
             background-size: contain;
             background-position: center;
+            // &:after {
+            //   content: "";
+            //   position: absolute;
+            //   left: -40px;
+            //   background-image: url(./obj/close.png);
+            // }
+          }
+          .esc {
+            position: absolute;
+            // left: 95%;
           }
         }
       }
+
+      @media screen and (max-width: 1280px) {
+        height: calc(100% - 140px);
+      }
+      @media screen and (max-width: 1024px) {
+        height: calc(75% - 140px);
+      }
+      @media screen and (max-width: 768px) {
+        // padding-top: 60px;
+        height: calc(50% - 140px);
+      }
     }
-    .history{
+    .history {
       width: 100%;
       height: 1600px;
     }
@@ -215,22 +262,22 @@ body {
     background-image: url("./img/pic2/nw.png");
   }
 }
-@keyframes jump{
-  0%{
-    top:20px;
+@keyframes jump {
+  0% {
+    top: 20px;
   }
-  20%{
-    border-radius:2px;  /*從 20% 的地方才開始變形*/
+  20% {
+    border-radius: 2px; /*從 20% 的地方才開始變形*/
   }
-  50%{
-    top:50px; 
+  50% {
+    top: 50px;
     /* border-bottom-right-radius:25px; */
   }
-  80%{
-    border-radius:2px;  /*到 80% 的地方恢復原狀*/
+  80% {
+    border-radius: 2px; /*到 80% 的地方恢復原狀*/
   }
-  100%{
-    top:20px;
+  100% {
+    top: 20px;
   }
 }
 // 100% {

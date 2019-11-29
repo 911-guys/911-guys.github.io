@@ -116,11 +116,23 @@ body .container-fluid .bgImg {
   width: 110%;
 }
 
+@media screen and (max-width: 768px) {
+  body .container-fluid .bgImg {
+    height: 80%;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  body .container-fluid .bgImg {
+    height: 70%;
+  }
+}
+
 body .container-fluid .bgImg .bg_image {
   width: 110%;
   height: 110%;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
   background-position: center;
 }
 
@@ -132,7 +144,7 @@ body .container-fluid .bgImg .bg_image {
 
 @media screen and (max-width: 768px) {
   body .container-fluid .bgImg .bg_image {
-    height: 50%;
+    height: 70%;
   }
 }
 
@@ -156,6 +168,12 @@ body .container-fluid .container .row {
 @media screen and (max-width: 1024px) {
   body .container-fluid .container .row {
     height: 80%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  body .container-fluid .container .row {
+    height: 40%;
   }
 }
 
@@ -202,41 +220,71 @@ body .container-fluid .container .row .people_container.active {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  height: 80%;
+  height: 90%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-body .container-fluid .container .row .people_container.active .people {
-  width: 20%;
-  height: 100%;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-body .container-fluid .container .row .people_container.active .people_text {
-  font-size: 35px;
-  width: 45%;
-  color: beige;
-}
-
 @media screen and (max-width: 1024px) {
-  body .container-fluid .container .row .people_container.active .people_text {
-    font-size: 20px;
+  body .container-fluid .container .row .people_container.active {
+    height: 70%;
   }
 }
 
 @media screen and (max-width: 768px) {
-  body .container-fluid .container .row .people_container.active .people_text {
-    font-size: 15px;
+  body .container-fluid .container .row .people_container.active {
+    height: 110%;
   }
 }
 
 @media screen and (max-width: 414px) {
-  body .container-fluid .container .row .people_container.active .people_text {
-    font-size: 11px;
+  body .container-fluid .container .row .people_container.active {
+    height: 90%;
+  }
+}
+
+body .container-fluid .container .row .people_container.active .people {
+  width: 35%;
+  height: 100%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+body .container-fluid .container .row .people_container.active .textbox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+  width: 45%;
+}
+
+body .container-fluid .container .row .people_container.active .textbox .people_text {
+  text-align: center;
+  font-size: 35px;
+  width: 100%;
+  color: beige;
+}
+
+@media screen and (max-width: 1024px) {
+  body .container-fluid .container .row .people_container.active .textbox .people_text {
+    font-size: 25px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  body .container-fluid .container .row .people_container.active .textbox .people_text {
+    font-size: 22px;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  body .container-fluid .container .row .people_container.active .textbox .people_text {
+    font-size: 12px;
   }
 }
 
@@ -252,7 +300,7 @@ body .container-fluid .container .row .people_container.active .people_line {
 body .container-fluid .container .row .people_container.active .esc {
   position: absolute;
   cursor: pointer;
-  left: 95%;
+  left: 90%;
 }
 
 @media screen and (max-width: 1280px) {
@@ -263,13 +311,7 @@ body .container-fluid .container .row .people_container.active .esc {
 
 @media screen and (max-width: 1024px) {
   body .container-fluid .container {
-    height: calc(75% - 140px);
-  }
-}
-
-@media screen and (max-width: 768px) {
-  body .container-fluid .container {
-    height: calc(50% - 140px);
+    height: calc(85% - 140px);
   }
 }
 

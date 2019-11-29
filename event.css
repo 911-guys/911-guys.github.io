@@ -15,7 +15,7 @@ body .top {
 body .top .background {
   background-image: url(./event/bgline.png);
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
   background-position: center;
 }
 

@@ -94,34 +94,43 @@ body {
     }
 
     .bgImg {
-      //月球跟線
+      //---------------------------------月球 & 線
       top: -5%;
       left: -10%;
       position: absolute;
       overflow: hidden;
       height: 110%;
       width: 110%;
-      @media screen and (max-width: 1024px) {
+      // @media screen and (max-width: 1024px) {
+      //   // padding-top: 60px;
+      //   // height: 50%;
+      // }
+      @media screen and (max-width: 768px) {
         // padding-top: 60px;
-        // height: 50%;
+        height: 80%;
+      }
+      @media screen and (max-width: 375px) {
+        // padding-top: 60px;
+        height: 70%;
       }
       .bg_image {
         width: 110%;
         height: 110%;
         background-repeat: no-repeat;
-        background-size: contain;
+        background-size: cover;
         background-position: center;
         @media screen and (max-width: 1024px) {
           height: 75%;
         }
         @media screen and (max-width: 768px) {
           // padding-top: 60px;
-          height: 50%;
+          height: 70%;
         }
       }
     }
 
     .box {
+      //稱高度的
       width: 100%;
       height: 100px;
     }
@@ -132,17 +141,22 @@ body {
       transition: 2s;
 
       .row {
+        //包住3顆人頭的
         position: relative;
         height: 100%;
 
         @media screen and (max-width: 1024px) {
           height: 80%;
         }
+        @media screen and (max-width: 768px) {
+          height: 40%;
+        }
         .people_area {
+          //表面看到的3顆人頭
           cursor: pointer;
-          &:hover .people_group{
-              filter: brightness(1) blur(0px);
-            }
+          &:hover .people_group {
+            filter: brightness(1) blur(0px);
+          }
           .people_group {
             width: 100%;
             height: 100%;
@@ -151,7 +165,6 @@ body {
             animation-iteration-count: infinite;
             cursor: pointer;
             filter: brightness(0.5) blur(1px);
-            
 
             .bg-img {
               width: 100%;
@@ -176,6 +189,7 @@ body {
           // transition:5s;
         }
         .people_container.active {
+          //hover裡面的資訊
           position: relative;
           position: absolute;
           margin-top: 40px;
@@ -184,40 +198,62 @@ body {
           background-repeat: no-repeat;
           background-size: cover;
           background-position: center;
-          height: 80%;
+          height: 90%;
           display: flex;
-
+          @media screen and (max-width: 1024px) {
+            height: 70%;
+          }
+          @media screen and (max-width: 768px) {
+            height: 110%;
+          }
+          @media screen and (max-width: 414px) {
+            height: 90%;
+          }
           // .peoAndAura {
           //   height: 100%;
           //   width: 20%;
-            .people {
-              width: 20%;
-              height:100%;
-              background-size: cover;
-              background-repeat: no-repeat;
-              background-position: center;
-            }
+          .people {
+            width: 35%;
+            height: 100%;
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+          }
           // }
-          .people_text {
-            // text-align: center;
+          .textbox{
+            display: flex;
+            align-items:center ;
+            height: 100%;
+            width: 45%;
+            .people_text {
+            text-align: center;
             font-size: 35px;
             // padding: 50px;
             // position: absolute;
             // height: 100%;
-            width: 45%;
+            width: 100%;
             color: beige;
+            // vertical-align: middle;
             // top: 50%;
+
             @media screen and (max-width: 1024px) {
-              font-size: 20px;
+              font-size: 25px;
             }
             @media screen and (max-width: 768px) {
-              font-size: 15px;
+              font-size: 22px;
             }
             @media screen and (max-width: 414px) {
-              font-size: 11px;
+              font-size: 12px;
             }
-            
+            // &:before {
+            //   content: "";
+            //   height: 100%;
+            //   display: inline-block;
+            //   vertical-align: middle;
+            // }
           }
+          }
+          
           .people_line {
             height: 100%;
             width: 35%;
@@ -229,7 +265,7 @@ body {
           .esc {
             position: absolute;
             cursor: pointer;
-            left: 95%;
+            left: 90%;
           }
         }
       }
@@ -238,12 +274,12 @@ body {
         height: calc(100% - 140px);
       }
       @media screen and (max-width: 1024px) {
-        height: calc(75% - 140px);
+        height: calc(85% - 140px);
       }
-      @media screen and (max-width: 768px) {
-        // padding-top: 60px;
-        height: calc(50% - 140px);
-      }
+      // @media screen and (max-width: 768px) {
+      //   // padding-top: 60px;
+      //   height: calc(50% - 140px);
+      // }
     }
     .history {
       width: 100%;

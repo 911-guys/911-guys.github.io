@@ -6,8 +6,10 @@ body .top {
   padding-right: 0;
   padding-left: 0;
   width: 100%;
-  height: 100vh;
-  background-image: url("./img/pic2/BG.png");
+  height: 100%;
+  background: #1d0e39;
+  background: -webkit-gradient(linear, left top, right top, from(#1d0e39), color-stop(47%, #c413bc), to(#1d0e39));
+  background: linear-gradient(90deg, #1d0e39 0%, #c413bc 47%, #1d0e39 100%);
 }
 
 body .top .navbar {
@@ -104,10 +106,6 @@ body .top .start {
   height: 100vh;
 }
 
-body .top .eventAll {
-  background-color: grey;
-}
-
 body .top .eventAll .event_box .timeline {
   position: relative;
   max-width: 1140px;
@@ -158,9 +156,12 @@ body .top .eventAll .event_box .timeline .container:after {
 
 body .top .eventAll .event_box .timeline .container .content {
   padding: 20px 30px;
-  background-color: white;
   position: relative;
   border-radius: 6px;
+}
+
+body .top .eventAll .event_box .timeline .container .content img {
+  width: 100%;
 }
 
 body .top .eventAll .event_box .timeline .container.left {
@@ -169,27 +170,6 @@ body .top .eventAll .event_box .timeline .container.left {
 
 @media screen and (max-width: 768px) {
   body .top .eventAll .event_box .timeline .container.left {
-    left: 30px;
-  }
-}
-
-body .top .eventAll .event_box .timeline .container.left:before {
-  content: " ";
-  height: 0;
-  position: absolute;
-  top: 22px;
-  width: 0;
-  z-index: 1;
-  right: 30px;
-  border: medium solid white;
-  border-width: 10px 0 10px 10px;
-  border-color: transparent transparent transparent white;
-}
-
-@media screen and (max-width: 768px) {
-  body .top .eventAll .event_box .timeline .container.left:before {
-    border-width: 10px 10px 10px 0;
-    border-color: transparent white transparent transparent;
     left: 30px;
   }
 }
@@ -210,21 +190,30 @@ body .top .eventAll .event_box .timeline .container.right {
   }
 }
 
-body .top .eventAll .event_box .timeline .container.right:before {
-  content: " ";
-  height: 0;
-  position: absolute;
-  top: 22px;
-  width: 0;
-  z-index: 1;
-  left: 30px;
-  border: medium solid white;
-  border-width: 10px 10px 10px 0;
-  border-color: transparent white transparent transparent;
-}
-
 body .top .eventAll .event_box .timeline .container.right:after {
   left: -13px;
+}
+
+body .top .loading {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media screen and (max-width: 768px) {
+  body .top .loading {
+    -webkit-box-pack: left;
+        -ms-flex-pack: left;
+            justify-content: left;
+  }
+}
+
+body .top .loading img {
+  padding: 0 0 20px 0;
+  width: 50%;
 }
 
 body .top .footer {

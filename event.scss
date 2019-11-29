@@ -5,10 +5,12 @@ body {
     padding-left: 0;
     // padding-top: 40px;
     width: 100%;
-    height: 100vh;
+    height: 100%;
     // background-color: #BBAA99;
-    background-image: url("./img/pic2/BG.png");
-
+    // background-image: url("./img/pic2/BG.png");
+    background: rgb(29, 14, 57);
+    background: linear-gradient(90deg, rgba(29, 14, 57, 1) 0%, rgba(196, 19, 188, 1) 47%, rgba(29, 14, 57, 1) 100%);
+    
     .navbar {
       width: 100%;
       background-image: url("./img/pic2/NAV.png");
@@ -91,7 +93,7 @@ body {
       height: 100vh;
     }
     .eventAll {
-      background-color: grey;
+      // background-color: grey;
       .event_box {
         .timeline {
           //時間線 中間那條
@@ -133,9 +135,12 @@ body {
             }
             .content {
               padding: 20px 30px;
-              background-color: white;
+              // background-color: white;
               position: relative;
               border-radius: 6px;
+              img {
+                width: 100%;
+              }
             }
           }
           .container.left {
@@ -143,23 +148,23 @@ body {
             @media screen and (max-width: 768px) {
               left: 30px;
             }
-            &:before {
-              content: " ";
-              height: 0;
-              position: absolute;
-              top: 22px;
-              width: 0;
-              z-index: 1;
-              right: 30px;
-              border: medium solid white;
-              border-width: 10px 0 10px 10px;
-              border-color: transparent transparent transparent white;
-              @media screen and (max-width: 768px) {
-                border-width: 10px 10px 10px 0;
-                border-color: transparent white transparent transparent;
-                left: 30px;
-              }
-            }
+            // &:before {
+            //   content: " ";
+            //   height: 0;
+            //   position: absolute;
+            //   top: 22px;
+            //   width: 0;
+            //   z-index: 1;
+            //   right: 30px;
+            //   border: medium solid white;
+            //   border-width: 10px 0 10px 10px;
+            //   border-color: transparent transparent transparent white;
+            //   @media screen and (max-width: 768px) {
+            //     border-width: 10px 10px 10px 0;
+            //     border-color: transparent white transparent transparent;
+            //     left: 30px;
+            //   }
+            // }
             &:after {
               @media screen and (max-width: 768px) {
                 left: -13px;
@@ -171,23 +176,35 @@ body {
             @media screen and (max-width: 768px) {
               left: 30px;
             }
-            &:before {
-              content: " ";
-              height: 0;
-              position: absolute;
-              top: 22px;
-              width: 0;
-              z-index: 1;
-              left: 30px;
-              border: medium solid white;
-              border-width: 10px 10px 10px 0;
-              border-color: transparent white transparent transparent;
-            }
+            // &:before {
+            //   content: " ";
+            //   height: 0;
+            //   position: absolute;
+            //   top: 22px;
+            //   width: 0;
+            //   z-index: 1;
+            //   left: 30px;
+            //   border: medium solid white;
+            //   border-width: 10px 10px 10px 0;
+            //   border-color: transparent white transparent transparent;
+            // }
             &:after {
               left: -13px;
             }
           }
         }
+      }
+    }
+
+    .loading {
+      display: flex;
+      justify-content: center;
+      @media screen and (max-width: 768px){
+        justify-content: left;
+      }
+      img {
+        padding: 0 0 20px 0;
+        width: 50%;
       }
     }
 

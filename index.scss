@@ -110,26 +110,23 @@ body {
           }
         }
       }
-      // #scene4 {
-      //   bottom: 5%;
-      //   left: 12%;
-      //   @media screen and (max-width: 768px) {
-      //     bottom: 5%;
-      //     left: 3%;
-      //   }
-      // }
-      // #scene5 {
-      //   bottom: 30%;
-      //   left: 12%;
-      // }
-      // #scene6 {
-      //   bottom: 35%;
-      //   left: 50%;
-      // }
-      // #scene7 {
-      //   bottom: 10%;
-      //   left: 60%;
-      // }
+      #scene4 {
+        bottom: 5%;
+        left: 12%;
+       
+      }
+      #scene5 {
+        bottom: 30%;
+        left: 12%;
+      }
+      #scene6 {
+        bottom: 35%;
+        left: 50%;
+      }
+      #scene7 {
+        bottom: 10%;
+        left: 60%;
+      }
 
         #sceneBg{
           width: 100%;
@@ -229,7 +226,7 @@ body {
     }
   }
 }
-
+}
 @keyframes example {
   0% {
     background-image: url("./img/pic2/all.png");

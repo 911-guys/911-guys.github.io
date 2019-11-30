@@ -10,7 +10,7 @@ body {
     // background-image: url("./img/pic2/BG.png");
     background: rgb(29, 14, 57);
     background: linear-gradient(90deg, rgba(29, 14, 57, 1) 0%, rgba(196, 19, 188, 1) 47%, rgba(29, 14, 57, 1) 100%);
-    
+
     .navbar {
       width: 100%;
       background-image: url("./img/pic2/NAV.png");
@@ -103,6 +103,10 @@ body {
           height: 75vh;
           // margin-top: 60px;
         }
+        @media screen and (max-width: 1024px) {
+          height: 50vh;
+          // margin-top: 60px;
+        }
         @media screen and (max-width: 768px) {
           height: 33vh;
           // margin-top: 60px;
@@ -114,16 +118,22 @@ body {
       }
       .product_box {
         width: 100%;
-        height: 100vh;
+        // height: 78vh;
         margin: 0 0 20px 0;
-        border: black 1px solid;
-        @media screen and (max-width: 768px) {
-          height: 27vh;
-        }
+        // border: black 1px solid;
+        // @media screen and (max-width: 768px) {
+        //   // height: 27vh;
+        // }
       }
       .box1 {
         overflow: hidden;
-
+        height: 87vh;
+        @media screen and (max-width: 1024px) {
+          height: 50vh;
+        }
+        // @media screen and (max-width: 768px) {
+        //   height: 33vh;
+        // }
         .swiper-wrapper {
           .swiper-slide {
             height: 100%;
@@ -140,15 +150,22 @@ body {
 
       .box2 {
         .layer2_l {
-          border: #ee0a35 1px solid;
+          // border: #ee0a35 1px solid;
           height: 100%;
+          height: calc(66vw - 20px);
           padding: 0px;
           background-repeat: no-repeat;
           background-size: cover;
           background-position: center;
+          display: flex;
+          align-items: center;
           img {
             width: 100%;
             height: auto;
+            @media screen and (max-width: 768px) {
+              width: auto;
+              height: 100%;
+            }
           }
         }
         .layer2_r {
@@ -156,16 +173,25 @@ body {
           flex-wrap: wrap;
           height: 100%;
           padding: 0px;
+
+          // @media screen and (max-width: 768px) {
+          //   height: 27vh;
+          // }
           .layer2_r_item {
-            border: #ee0a35 1px solid;
+            // border: #ee0a35 1px solid;
             width: calc(50% - 20px);
-            height: calc(50% - 20px);
+            height: calc(33vw - 20px);
             margin: 10px;
-            background-repeat: no-repeat;
-            background-size: cover;
-            background-position: center;
+            // background-repeat: no-repeat;
+            // background-size: cover;
+            // background-position: center;
             background: rgb(208, 106, 42);
             background: linear-gradient(0deg, rgba(208, 106, 42, 1) 0%, rgba(12, 16, 103, 0.9920343137254902) 100%);
+            display: flex;
+            align-items: center;
+            @media screen and (max-width: 768px) {
+              height: calc(50vw - 20px);
+            }
             img {
               width: 100%;
               height: auto;
@@ -178,9 +204,9 @@ body {
         .layer3_cont {
           display: flex;
           max-width: 100%;
-          height: auto;
+          height: 60vw;
           .layer3 {
-            border: #ee0a35 1px solid;
+            // border: #ee0a35 1px solid;
             height: 100%;
             // background-repeat: no-repeat;
             // background-size: cover;
@@ -208,12 +234,12 @@ body {
       .box4 {
         position: relative;
         .layer4_cont {
-          position: absolute;
+          // position: absolute;
           display: flex;
           height: 100%;
           width: 100%;
           .layer4 {
-            border: #ee0a35 1px solid;
+            // border: #ee0a35 1px solid;
             height: 100%;
             background-repeat: no-repeat;
             background-size: contain;
@@ -227,6 +253,8 @@ body {
         }
         .layer4_group {
           position: absolute;
+          left: 0;
+          top: 0;
           width: 100%;
           height: 100%;
           display: flex;
@@ -234,9 +262,8 @@ body {
           .layer4_backRect {
             height: 100%;
             background-color: brown;
-            // flex-wrap: wrap;
-            background-repeat: no-repeat;
-            background-size: contain;
+            // background-repeat: no-repeat;
+            // background-size: contain;
           }
           img {
             width: 100%;
@@ -246,7 +273,8 @@ body {
       }
       .box5 {
         position: relative;
-
+        width: 100%;
+        height: 40vw;
         .layer5PicBox {
           height: 100%;
           display: flex;
@@ -258,7 +286,7 @@ body {
       }
       .swiper-container {
         // width: 100%;
-        // height: 100%;
+        // height: 90vh;
         .swiper-wrapper {
           .swiper-slide {
             // text-align: center;
@@ -275,9 +303,8 @@ body {
             }
           }
         }
-        
       }
-      .box_bot{
+      .box_bot {
         height: 30px;
       }
     }

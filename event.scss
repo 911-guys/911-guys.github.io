@@ -129,6 +129,7 @@ html{
       }
     }
     .eventAll {
+      padding: 0;
       // background-color: grey;
       .background {
         background-image: url(./event/bgline.png);
@@ -264,10 +265,10 @@ html{
       }
 
       .bottomPeo {
-        width: 100%;
+        // width: 100%;
         img {
           width: 100%;
-          height: auto;
+          // height: auto;
         }
       }
 

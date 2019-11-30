@@ -54,7 +54,7 @@
 
         <div class="container-fluid">
 
-            <div id="scene4" class="scene">
+            <!-- <div id="scene4" class="scene">
                 <div data-depth="1" class="bg-img" style="background-image: url('./obj/rocket.png');"></div>
             </div>
             <div id="scene5" class="scene">
@@ -65,8 +65,13 @@
             </div>
             <div id="scene7" class="scene">
                 <div data-depth="1" class="bg-img" style="background-image: url('./obj/star.png');"></div>
-            </div>
-
+            </div> -->
+<div id="sceneBg">
+    <div data-depth="1" class="bg-img bgObj01" style="background-image: url('./obj/rocket.png');"></div>
+    <div data-depth="1" class="bg-img bgObj02" style="background-image: url('./obj/star.png');"></div>
+    <div data-depth="1" class="bg-img bgObj03" style="background-image: url('./obj/star.png');"></div>
+    <div data-depth="1" class="bg-img bgObj04" style="background-image: url('./obj/star.png');"></div>
+</div>
 
             <div class="row">
 
@@ -98,7 +103,7 @@
 
             <div class="conn">
                 <div id="fb" class="conn_btn">
-                    <a href="https://www.facebook.com/JiuYiYi/"></a><img src="./obj/fb.png" alt="">
+                    <a href="https://www.facebook.com/JiuYiYi/"><img src="./obj/fb.png" alt=""></a>
                 
                 </div>
                 <div id="line" class="conn_btn">
@@ -141,14 +146,18 @@
         var parallaxInstance = new Parallax(scene2);
         var scene3 = document.getElementById('scene3');
         var parallaxInstance = new Parallax(scene3);
-        var scene4 = document.getElementById('scene4');
-        var parallaxInstance = new Parallax(scene4);
-        var scene5 = document.getElementById('scene5');
-        var parallaxInstance = new Parallax(scene5);
-        var scene6 = document.getElementById('scene6');
-        var parallaxInstance = new Parallax(scene6);
-        var scene7 = document.getElementById('scene7');
-        var parallaxInstance = new Parallax(scene7);
+        // var scene4 = document.getElementById('scene4');
+        // var parallaxInstance = new Parallax(scene4);
+        // var scene5 = document.getElementById('scene5');
+        // var parallaxInstance = new Parallax(scene5);
+        // var scene6 = document.getElementById('scene6');
+        // var parallaxInstance = new Parallax(scene6);
+        // var scene7 = document.getElementById('scene7');
+        // var parallaxInstance = new Parallax(scene7);
+        var sceneBg = document.getElementById('sceneBg');
+        var parallaxInstance = new Parallax(sceneBg);
+        console.log(sceneBg);
+        
     </script>
 
 

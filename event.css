@@ -153,10 +153,6 @@ html body .top #startword {
   }
 }
 
-html body .top .eventAll {
-  padding: 0;
-}
-
 html body .top .eventAll .background {
   background-image: url(./event/bgline.png);
   background-repeat: no-repeat;
@@ -297,8 +293,13 @@ html body .top .eventAll .loading img {
   }
 }
 
+html body .top .eventAll .bottomPeo {
+  width: 100%;
+}
+
 html body .top .eventAll .bottomPeo img {
   width: 100%;
+  height: auto;
 }
 
 html body .top .eventAll .footer {

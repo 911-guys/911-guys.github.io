@@ -113,7 +113,6 @@ body {
       #scene4 {
         bottom: 5%;
         left: 12%;
-       
       }
       #scene5 {
         bottom: 30%;
@@ -128,21 +127,13 @@ body {
         left: 60%;
       }
 
-        #sceneBg{
-          width: 100%;
-          height: 100vh;
-          .bg-img{
-            // width: 20%;
-            // height: 20%;
-            width: 500px;
-          height: 500px;
-          background-size: contain;
-          background-repeat: no-repeat;
-          background-position: center;
-          @media screen and (max-width: 768px) {
-            width: 300px;
-            height: 300px;
-          }
+        // .bgCont{
+        //   width: 100%;
+        //   height: 100vh;
+        //   .bg-img{
+        //     width: 20%;
+        //     height: 20%;
+        //   }
         //   .bgObj01{
         //     bottom: 5%;
         // left: 12%;
@@ -159,7 +150,7 @@ body {
         //     bottom: 10%;
         // left: 60%;
         //   }
-        }
+        // }
 
       .row {
         height: 75%;
@@ -226,7 +217,7 @@ body {
     }
   }
 }
-}
+
 @keyframes example {
   0% {
     background-image: url("./img/pic2/all.png");

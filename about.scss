@@ -37,6 +37,8 @@ body {
           background-size: cover;
           background-position: center;
           @media screen and (max-width: 768px) {
+            height: 90px;
+            width: 80px;
             position: absolute;
             left: 50%;
             transform: translateX(-50%);
@@ -176,8 +178,17 @@ body {
               height: 100%;
               background-repeat: no-repeat;
               background-size: contain;
-              background-position: center;              
+              background-position: center;
+
+              // filter: brightness(0.8) blur(2px);
+              // &:hover{
+              //   filter: brightness(0.5) blur(0px);
+              // }
             }
+            // .bg-img:hover{
+
+            //   }
+          }
         }
 
         .people_container {
@@ -339,7 +350,7 @@ body {
     border-radius: 2px; /*從 20% 的地方才開始變形*/
   }
   50% {
-    top: -10px;
+    top: -0px;
     /* border-bottom-right-radius:25px; */
   }
   80% {

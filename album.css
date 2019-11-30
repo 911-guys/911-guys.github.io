@@ -99,6 +99,42 @@ body .container-fluid .navbar .container .bg-img:hover {
   border-bottom: solid plum 10px;
 }
 
+body .container-fluid .swiper-container-Name {
+  width: 100%;
+  height: 100px;
+}
+
+body .container-fluid .swiper-container-Name .swiper-wrapper .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+body .container-fluid .swiper-container {
+  width: 300px;
+  height: 300px;
+  position: absolute;
+  left: 50%;
+  top: 70%;
+  margin-left: -150px;
+  margin-top: -150px;
+}
+
+body .container-fluid .swiper-container .swiper-wrapper .swiper-slide {
+  background-position: center;
+  background-size: cover;
+}
+
 body .container-fluid .footer {
   position: fixed;
   width: 100%;

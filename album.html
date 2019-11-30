@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>專輯</title>
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
     <link rel="stylesheet" href="./album.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
         integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
@@ -18,9 +20,9 @@
             <div class="container ">
 
                 <div class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button"
-                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        
+                    <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+
                     </a>
                     <!-- ................................................... -->
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -50,7 +52,50 @@
                 <!-- ********************************************************************************* -->
             </div>
         </nav>
-        <div class="pic"></div>
+        <div class="swiper-container-Name">
+            <div class="swiper-wrapper">
+              <div class="albumName">Slide 1</div>
+              <div class="albumName">Slide 2</div>
+              <div class="albumName">Slide 3</div>
+              <div class="albumName">Slide 4</div>
+              <div class="albumName">Slide 5</div>
+              <div class="albumName">Slide 6</div>
+              <div class="albumName">Slide 7</div>
+              <div class="albumName">Slide 8</div>
+              <div class="albumName">Slide 9</div>
+              <div class="albumName">Slide 10</div>
+              <div class="albumName">Slide 11</div>
+              <div class="albumName">Slide 12</div>
+              <div class="albumName">Slide 13</div>
+            </div>
+
+        <!-- Swiper -->
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide" style="background-image:url(./albumPic/album_1.jpg)"></div>
+                <div class="swiper-slide" style="background-image:url(./albumPic/album_2.jpg)"></div>
+                <div class="swiper-slide" style="background-image:url(./albumPic/album_3.jpg)"></div>
+                <div class="swiper-slide" style="background-image:url(./albumPic/album_4.jpg)"></div>
+                <div class="swiper-slide" style="background-image:url(./albumPic/album_5.jpg)"></div>
+                <div class="swiper-slide" style="background-image:url(./albumPic/album_6.jpg)"></div>
+                <div class="swiper-slide" style="background-image:url(./albumPic/album_7.jpg)"></div>
+                <div class="swiper-slide" style="background-image:url(./albumPic/album_8.jpg)"></div>
+                <div class="swiper-slide" style="background-image:url(./albumPic/album_9.jpg)"></div>
+                <div class="swiper-slide" style="background-image:url(./albumPic/album_10.jpg)"></div>
+                <div class="swiper-slide" style="background-image:url(./albumPic/album_11.jpg)"></div>
+                <div class="swiper-slide" style="background-image:url(./albumPic/album_12.jpg)"></div>
+                <div class="swiper-slide" style="background-image:url(./albumPic/album_13.jpg)"></div>
+
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+        </div>
+
+
+
+
         <div class="footer">
             Copyright © 玖壹壹
         </div>
@@ -67,11 +112,53 @@
         crossorigin="anonymous"></script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
-   
-   <!-- <script>
-        var scene = document.getElementById('scene');
-        var parallaxInstance = new Parallax(scene);
-    </script> -->
+
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            effect: 'cube',
+            grabCursor: true,
+            loop: true,
+            cubeEffect: {
+                shadow: true,
+                slideShadows: true,
+                shadowOffset: 20,
+                shadowScale: 0.94,
+            },
+            // pagination: {
+            //     el: '.swiper-pagination',
+            // },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+    </script>
+ <!-- <script>
+    var swiper = new Swiper('.swiper-container-Name', {
+      direction: 'vertical',
+      loop: true,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+    });
+  </script> -->
+<script>
+    var swiper = new Swiper('.swiper-container-Name', {
+        direction: 'vertical',
+        loop: true,
+      slidesPerView: 3,
+      spaceBetween: 30,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+    });
+  </script>
+
 </body>
 
 </html>

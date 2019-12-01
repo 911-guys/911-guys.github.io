@@ -99,28 +99,36 @@ body .container-fluid .navbar .container .bg-img:hover {
   border-bottom: solid plum 10px;
 }
 
-body .container-fluid .swiper-container-Name {
-  width: 100%;
-  height: 100px;
+body .container-fluid .container {
+  padding-top: 140px;
 }
 
-body .container-fluid .swiper-container-Name .swiper-wrapper .swiper-slide {
+body .container-fluid .container .Name {
+  width: 100%;
+  height: 33vh;
+}
+
+body .container-fluid .container .Name .NameList .swiper-slide {
   text-align: center;
   font-size: 18px;
   background: #fff;
-  /* Center slide text vertically */
+  border: #a912aa solid 6px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-body .container-fluid .swiper-container {
+body .container-fluid .container .Name .NameList .swiper-slide.active {
+  background: #5f2b2b;
+}
+
+body .container-fluid .container .Pic {
   width: 300px;
   height: 300px;
   position: absolute;
@@ -130,7 +138,7 @@ body .container-fluid .swiper-container {
   margin-top: -150px;
 }
 
-body .container-fluid .swiper-container .swiper-wrapper .swiper-slide {
+body .container-fluid .container .Pic .swiper-wrapper .swiper-slide {
   background-position: center;
   background-size: cover;
 }

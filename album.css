@@ -7,7 +7,8 @@ body .container-fluid {
   padding-left: 0;
   width: 100%;
   height: 100vh;
-  background-image: url("./img/pic2/BG.png");
+  background: #070955;
+  background: radial-gradient(circle, #070955 0%, #170b77 11%, #d52fa2 53%, #d52fa2 63%, #090d3e 100%);
   position: relative;
 }
 
@@ -107,21 +108,25 @@ body .container-fluid .albumInsideContentBox {
 body .container-fluid .albumInsideContentBox.active {
   padding-top: 10px;
   position: absolute;
-  top: 20%;
+  top: 15vh;
   left: 50%;
   z-index: 2222;
   width: 100%;
-  height: 70vh;
+  height: 80vh;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
-  background-color: plum;
+  background: #9f5db3;
+  background: -webkit-gradient(linear, left top, right top, from(#9f5db3), to(#100945));
+  background: linear-gradient(90deg, #9f5db3 0%, #100945 100%);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
 body .container-fluid .albumInsideContentBox.active:after {
-  content: "";
+  cursor: pointer;
+  pointer-events: auto;
+  content: attr(data_text);
   position: absolute;
   width: 30px;
   height: 30px;
@@ -135,13 +140,24 @@ body .container-fluid .albumInsideContentBox.active:after {
 @media screen and (max-width: 1024px) {
   body .container-fluid .albumInsideContentBox.active {
     width: 80vw;
-    height: 70vh;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
 }
 
 body .container-fluid .albumInsideContentBox.active .albumFirstContent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   border: rebeccapurple solid 1px;
   width: 50vh;
 }
@@ -154,7 +170,18 @@ body .container-fluid .albumInsideContentBox.active .albumFirstContent {
   }
 }
 
+body .container-fluid .albumInsideContentBox.active .albumFirstContent .albumPicture {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 body .container-fluid .albumInsideContentBox.active .albumFirstContent .albumPicture img {
+  padding-top: 30px;
+  padding-left: 20px;
   width: 50vh;
   height: auto;
 }
@@ -173,16 +200,10 @@ body .container-fluid .albumInsideContentBox.active .albumFirstContent .albumPic
   }
 }
 
-@media screen and (max-width: 414px) {
-  body .container-fluid .albumInsideContentBox.active .albumFirstContent .albumPicture img {
-    width: 60vw;
-    height: auto;
-  }
-}
-
 body .container-fluid .albumInsideContentBox.active .albumFirstContent .albumName {
   width: 50vh;
   height: 15vh;
+  text-align: center;
 }
 
 @media screen and (max-width: 1024px) {
@@ -193,15 +214,64 @@ body .container-fluid .albumInsideContentBox.active .albumFirstContent .albumNam
 }
 
 body .container-fluid .albumInsideContentBox.active .listBox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: calc(100% - 55vh);
   height: 100%;
-  border: rebeccapurple solid 1px;
+}
+
+body .container-fluid .albumInsideContentBox.active .listBox ul {
+  padding-top: 20%;
+}
+
+body .container-fluid .albumInsideContentBox.active .listBox ul li {
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+body .container-fluid .albumInsideContentBox.active .listBox .songName {
+  width: 100%;
+  height: 80%;
+}
+
+@media screen and (max-width: 1024px) {
+  body .container-fluid .albumInsideContentBox.active .listBox .songName {
+    width: 100%;
+  }
+}
+
+body .container-fluid .albumInsideContentBox.active .listBox .songName .NameList .swiper-slide {
+  text-align: center;
+  font-size: 25px;
+  color: white;
+  margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 @media screen and (max-width: 1024px) {
   body .container-fluid .albumInsideContentBox.active .listBox {
     width: 100%;
-    height: 20vh;
+    height: calc(100% - 10vh - 50vw);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  body .container-fluid .albumInsideContentBox.active .listBox {
+    width: 100%;
+    height: calc(100% - 10vh - 60vw);
   }
 }
 
@@ -216,7 +286,7 @@ body .container-fluid .container .Name {
 
 body .container-fluid .container .Name .NameList .swiper-slide {
   text-align: center;
-  font-size: 18px;
+  font-size: 32px;
   background: #fff;
   border: #a912aa solid 6px;
   display: -webkit-box;
@@ -232,16 +302,26 @@ body .container-fluid .container .Name .NameList .swiper-slide {
 
 body .container-fluid .container .Name .NameList .swiper-slide.active {
   background: #5f2b2b;
+  color: white;
 }
 
 body .container-fluid .container .Pic {
-  width: 300px;
-  height: 300px;
+  width: 400px;
+  height: 400px;
   position: absolute;
   left: 50%;
   top: 70%;
-  margin-left: -150px;
-  margin-top: -150px;
+  margin-left: -200px;
+  margin-top: -200px;
+}
+
+@media screen and (max-width: 414px) {
+  body .container-fluid .container .Pic {
+    width: 200px;
+    height: 200px;
+    margin-left: -100px;
+    margin-top: -100px;
+  }
 }
 
 body .container-fluid .container .Pic .swiper-wrapper .swiper-slide {

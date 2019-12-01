@@ -7,7 +7,16 @@ body {
     width: 100%;
     height: 100vh;
     // background-color: #BBAA99;
-    background-image: url("./img/pic2/BG.png");
+    // background-image: url("./img/pic2/BG.png");
+    background: rgb(7, 9, 85);
+    background: radial-gradient(
+      circle,
+      rgba(7, 9, 85, 1) 0%,
+      rgba(23, 11, 119, 1) 11%,
+      rgba(213, 47, 162, 1) 53%,
+      rgba(213, 47, 162, 1) 63%,
+      rgba(9, 13, 62, 1) 100%
+    );
     position: relative;
     .navbar {
       width: 100%;
@@ -90,19 +99,23 @@ body {
       display: none;
     }
     .albumInsideContentBox.active {
+      // pointer-events: none;
       padding-top: 10px;
       position: absolute;
-      top: 20%;
+      top: 15vh;
       left: 50%;
       z-index: 2222;
       // display: none;
       width: 100%;
-      height: 70vh;
+      height: 80vh;
       transform: translateX(-50%);
-      background-color: plum;
+      background: rgb(159, 93, 179);
+      background: linear-gradient(90deg, rgba(159, 93, 179, 1) 0%, rgba(16, 9, 69, 1) 100%);
       display: flex;
       &:after {
-        content: "";
+        cursor: pointer;
+        pointer-events: auto;
+        content: attr(data_text);
         position: absolute;
         width: 30px;
         height: 30px;
@@ -115,10 +128,14 @@ body {
       }
       @media screen and (max-width: 1024px) {
         width: 80vw;
-        height: 70vh;
+        // height: 70vh;
         flex-wrap: wrap;
       }
       .albumFirstContent {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
         border: rebeccapurple solid 1px;
         width: 50vh;
         // height: 100%;
@@ -128,7 +145,13 @@ body {
           flex-wrap: wrap;
         }
         .albumPicture {
+          display: flex;
+          justify-content: center;
           img {
+            // left: 50%;
+            // margin: auto;
+            padding-top: 30px;
+            padding-left: 20px;
             width: 50vh;
             height: auto;
             @media screen and (max-width: 1024px) {
@@ -141,16 +164,17 @@ body {
               height: auto;
               // flex-wrap: wrap;
             }
-            @media screen and (max-width: 414px) {
-              width: 60vw;
-              height: auto;
-              // flex-wrap: wrap;
-            }
+            // @media screen and (max-width: 414px) {
+            //   width: 60vw;
+            //   height: auto;
+            //   // flex-wrap: wrap;
+            // }
           }
         }
         .albumName {
           width: 50vh;
           height: 15vh;
+          text-align: center;
           @media screen and (max-width: 1024px) {
             width: 100%;
             height: 10vh;
@@ -158,23 +182,52 @@ body {
         }
       }
       .listBox {
+        display: flex;
+        align-items: center;
         width: calc(100% - 55vh);
         height: 100%;
-        border: rebeccapurple solid 1px;
+        // border: rebeccapurple solid 1px;
+        ul {
+          padding-top: 20%;
+          li {
+            text-align: center;
+            font-size: 35px;
+            color: white;
+          }
+        }
+        .songName {
+          width: 100%;
+          height: 80%;
+          @media screen and (max-width: 1024px) {
+            width: 100%;
+            // height: 100%;
+          }
+          .NameList {
+            // height: ;
+            .swiper-slide {
+              text-align: center;
+              font-size: 25px;
+              color: white;
+              margin-top: 20px;
+
+              // padding: 15px;
+              // background: #fff;
+              // border: #a912aa solid 6px;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+            }
+          }
+        }
         @media screen and (max-width: 1024px) {
           width: 100%;
-          height: 20vh;
+          height: calc(100% - 10vh - 50vw);
+        }
+        @media screen and (max-width: 768px) {
+          width: 100%;
+          height: calc(100% - 10vh - 60vw);
         }
       }
-      // .close {
-      //   position: absolute;
-      //   top: 10px;
-      //   left: 85%;
-      //   img {
-      //     width: 30px;
-      //     height: auto;
-      //   }
-      // }
     }
 
     .container {
@@ -185,7 +238,7 @@ body {
         .NameList {
           .swiper-slide {
             text-align: center;
-            font-size: 18px;
+            font-size: 32px;
             background: #fff;
             border: #a912aa solid 6px;
             display: flex;
@@ -194,18 +247,25 @@ body {
           }
           .swiper-slide.active {
             background: rgb(95, 43, 43);
+            color: white;
           }
         }
       }
 
       .Pic {
-        width: 300px;
-        height: 300px;
+        width: 400px;
+        height: 400px;
         position: absolute;
         left: 50%;
         top: 70%;
-        margin-left: -150px;
-        margin-top: -150px;
+        margin-left: -200px;
+        margin-top: -200px;
+        @media screen and (max-width: 414px) {
+          width: 200px;
+          height: 200px;
+          margin-left: -100px;
+          margin-top: -100px;
+        }
         .swiper-wrapper {
           .swiper-slide {
             background-position: center;

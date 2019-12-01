@@ -8,6 +8,7 @@ body .container-fluid {
   width: 100%;
   height: 100vh;
   background-image: url("./img/pic2/BG.png");
+  position: relative;
 }
 
 body .container-fluid .navbar {
@@ -97,6 +98,111 @@ body .container-fluid .navbar .container .bg-img {
 
 body .container-fluid .navbar .container .bg-img:hover {
   border-bottom: solid plum 10px;
+}
+
+body .container-fluid .albumInsideContentBox {
+  display: none;
+}
+
+body .container-fluid .albumInsideContentBox.active {
+  padding-top: 10px;
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  z-index: 2222;
+  width: 100%;
+  height: 70vh;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  background-color: plum;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body .container-fluid .albumInsideContentBox.active:after {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 10px;
+  left: calc(100% - 40px);
+  background-size: cover;
+  background-position: center;
+  background-image: url("./albumPic/cancel.png");
+}
+
+@media screen and (max-width: 1024px) {
+  body .container-fluid .albumInsideContentBox.active {
+    width: 80vw;
+    height: 70vh;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+body .container-fluid .albumInsideContentBox.active .albumFirstContent {
+  border: rebeccapurple solid 1px;
+  width: 50vh;
+}
+
+@media screen and (max-width: 1024px) {
+  body .container-fluid .albumInsideContentBox.active .albumFirstContent {
+    width: 80vw;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+body .container-fluid .albumInsideContentBox.active .albumFirstContent .albumPicture img {
+  width: 50vh;
+  height: auto;
+}
+
+@media screen and (max-width: 1024px) {
+  body .container-fluid .albumInsideContentBox.active .albumFirstContent .albumPicture img {
+    width: 50vw;
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  body .container-fluid .albumInsideContentBox.active .albumFirstContent .albumPicture img {
+    width: 60vw;
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  body .container-fluid .albumInsideContentBox.active .albumFirstContent .albumPicture img {
+    width: 60vw;
+    height: auto;
+  }
+}
+
+body .container-fluid .albumInsideContentBox.active .albumFirstContent .albumName {
+  width: 50vh;
+  height: 15vh;
+}
+
+@media screen and (max-width: 1024px) {
+  body .container-fluid .albumInsideContentBox.active .albumFirstContent .albumName {
+    width: 100%;
+    height: 10vh;
+  }
+}
+
+body .container-fluid .albumInsideContentBox.active .listBox {
+  width: calc(100% - 55vh);
+  height: 100%;
+  border: rebeccapurple solid 1px;
+}
+
+@media screen and (max-width: 1024px) {
+  body .container-fluid .albumInsideContentBox.active .listBox {
+    width: 100%;
+    height: 20vh;
+  }
 }
 
 body .container-fluid .container {

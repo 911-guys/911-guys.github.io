@@ -291,7 +291,7 @@ body .container-fluid .container .mask .maskLine {
   z-index: 1111;
   width: 70%;
   height: 3.5vh;
-  border-bottom: 3px black solid;
+  border-bottom: 3px white solid;
 }
 
 body .container-fluid .container .Name {

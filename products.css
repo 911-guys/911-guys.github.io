@@ -68,6 +68,7 @@ body .container-fluid .navbar .container .navbar-brand {
 }
 
 body .container-fluid .navbar .container .imgBox {
+  cursor: pointer;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

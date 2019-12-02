@@ -390,7 +390,6 @@
         //         prevEl: '.swiper-button-prev',
         //     },
         // });
-        
         // 專輯圖片
         var swiper_Pic = new Swiper('.Pic', {
             effect: 'cube',
@@ -405,16 +404,13 @@
             },
         })
 
-
-
-
-        var albumInsideContentBox1 = document.querySelectorAll('.albumInsideContentBox');
-        console.log(albumInsideContentBox1);//0-12
+        var albumInsideContentBox = document.querySelectorAll('.albumInsideContentBox');
+        console.log(albumInsideContentBox);//0-12
 
         $('.Pic').click(function () {
             console.log(swiper_Pic.activeIndex);//12-24
             // swiper_Pic.activeIndex - 12
-            albumInsideContentBox1[swiper_Pic.activeIndex - 12].classList.add('active');
+            albumInsideContentBox[swiper_Pic.activeIndex - 12].classList.add('active');
         })
 
 
@@ -450,8 +446,7 @@
         var albumInsideContentBox = document.querySelectorAll('.albumInsideContentBox');
         var songNameList = document.querySelectorAll('.songNameList');
         var songPicture = document.querySelectorAll('.songPicture');
-        // console.log(songNameList);
-        // console.log(albumInsideContentBox);
+
 
         albumInsideContentBox.forEach((element, index) => {
 
@@ -461,57 +456,9 @@
             }
         });
 
+</script>
 
 
-
-
-
-        //...........................................................
-        // songNameList.forEach((element, index) => {
-        //     element.onclick = function () {
-        //         remove();
-        //         // songNameList.classList.remove('active');
-        //         element.classList.add('active');
-
-        //     }
-        // });
-
-        // function remove() {
-        //     songNameList.forEach((element, index) => {
-        //         element.classList.remove('active');
-        //     }
-        //     );
-        // }
-
-        //...........................................................
-
-        songNameList.forEach((element, index) => {
-            // console.log(element.activeIndex);
-
-
-        });
-
-
-
-        songPicture.forEach((element, index) => {
-            // console.log(element);
-
-            element.onclick = function () {
-
-                // albumInsideContentBox[index].classList.add('active');
-            }
-        });
-
-    </script>
-    <!-- Swiper.activeIndex -->
-    <!-- songNameList    進來就看的到的歌單List -->
-    <!-- songPicture     進來就看的到的歌單圖片 -->
-    <!-- albumInsideContentBox -->
-    <script>
-
-
-
-    </script>
 
 </body>
 

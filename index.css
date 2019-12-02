@@ -70,6 +70,7 @@ body .allBg .navbar .container .navbar-brand {
 }
 
 body .allBg .navbar .container .imgBox {
+  cursor: pointer;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

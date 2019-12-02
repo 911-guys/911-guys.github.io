@@ -73,6 +73,7 @@ html body .top .navbar .container .navbar-brand {
 }
 
 html body .top .navbar .container .imgBox {
+  cursor: pointer;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

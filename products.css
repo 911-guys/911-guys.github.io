@@ -221,7 +221,7 @@ body .container-fluid .container-fluid .box2 .layer2_r .layer2_r_item {
           align-items: center;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 414px) {
   body .container-fluid .container-fluid .box2 .layer2_r .layer2_r_item {
     height: calc(50vw - 20px);
   }

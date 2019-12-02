@@ -13,9 +13,9 @@ body .container-fluid {
 }
 
 body .container-fluid .navbar {
-  z-index: 11111;
   width: 100%;
   background-image: url("./img/pic2/NAV.png");
+  z-index: 1112;
 }
 
 body .container-fluid .navbar .container {

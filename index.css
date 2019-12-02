@@ -17,6 +17,7 @@ body .allBg {
 body .allBg .navbar {
   width: 100%;
   background-image: url("./img/pic2/NAV.png");
+  z-index: 1112;
 }
 
 body .allBg .navbar .container {

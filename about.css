@@ -20,7 +20,7 @@ body .container-fluid {
 body .container-fluid .navbar {
   width: 100%;
   background-image: url("./img/pic2/NAV.png");
-  padding: 0;
+  z-index: 1112;
 }
 
 body .container-fluid .navbar .container {
@@ -65,8 +65,6 @@ body .container-fluid .navbar .container .navbar-brand {
 
 @media screen and (max-width: 768px) {
   body .container-fluid .navbar .container .navbar-brand {
-    height: 90px;
-    width: 80px;
     position: absolute;
     left: 50%;
     -webkit-transform: translateX(-50%);

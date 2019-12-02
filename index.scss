@@ -14,7 +14,7 @@ body {
     .navbar {
       width: 100%;
       background-image: url("./img/pic2/NAV.png");
-
+      z-index: 1112;
       .container {
         display: flex;
         height: 100px;
@@ -78,12 +78,6 @@ body {
                 border-top: 0;
               }
             }
-
-            // &:hover ul {
-            //   /* flex-wrap: wrap; */
-            //   display: block;
-            //   /* background-color: aqua; */
-            // }
           }
         }
         // *************************************************************

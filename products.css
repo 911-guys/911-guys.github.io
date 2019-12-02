@@ -15,6 +15,7 @@ body .container-fluid {
 body .container-fluid .navbar {
   width: 100%;
   background-image: url("./img/pic2/NAV.png");
+  z-index: 1112;
 }
 
 body .container-fluid .navbar .container {
@@ -142,6 +143,53 @@ body .container-fluid .container-fluid .first_product_box {
   }
 }
 
+body .container-fluid .container-fluid .first_product_box .productWord {
+  position: absolute;
+  top: 17%;
+  left: 75%;
+}
+
+body .container-fluid .container-fluid .first_product_box .productWord img {
+  width: 23vw;
+  height: auto;
+}
+
+body .container-fluid .container-fluid .light {
+  position: absolute;
+  top: 0;
+  padding-top: 140px;
+  width: 100%;
+  height: 100vh;
+  background-image: url("./products/layer1_light.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+@media screen and (max-width: 1280px) {
+  body .container-fluid .container-fluid .light {
+    height: 75vh;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  body .container-fluid .container-fluid .light {
+    height: 50vh;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  body .container-fluid .container-fluid .light {
+    height: 33vh;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  body .container-fluid .container-fluid .light {
+    height: 25vh;
+  }
+}
+
 body .container-fluid .container-fluid .product_box {
   width: 100%;
   margin: 0 0 20px 0;
@@ -193,6 +241,25 @@ body .container-fluid .container-fluid .box2 .layer2_l img {
   body .container-fluid .container-fluid .box2 .layer2_l img {
     width: auto;
     height: 100%;
+  }
+}
+
+body .container-fluid .container-fluid .box2 .layer2_l:after {
+  content: "";
+  position: absolute;
+  background-image: url("./products/layer3_1people.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  width: 40vw;
+  height: 100%;
+  left: 10vw;
+  z-index: 1111;
+}
+
+@media screen and (max-width: 768px) {
+  body .container-fluid .container-fluid .box2 .layer2_l:after {
+    left: 40vw;
   }
 }
 
@@ -292,6 +359,7 @@ body .container-fluid .container-fluid .box4 .layer4_group {
   position: absolute;
   left: 0;
   top: 0;
+  margin-left: unset;
   width: 100%;
   height: 100%;
   display: -webkit-box;
@@ -310,6 +378,19 @@ body .container-fluid .container-fluid .box4 .layer4_group .layer4_backRect {
 body .container-fluid .container-fluid .box4 .layer4_group img {
   width: 100%;
   height: auto;
+}
+
+body .container-fluid .container-fluid .box4 .peoLayer5 {
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  bottom: 0;
+  z-index: 1111;
+}
+
+body .container-fluid .container-fluid .box4 .peoLayer5 img {
+  width: 45vw;
 }
 
 body .container-fluid .container-fluid .box5 {

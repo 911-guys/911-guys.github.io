@@ -14,7 +14,7 @@ body {
     .navbar {
       width: 100%;
       background-image: url("./img/pic2/NAV.png");
-
+      z-index: 1112;
       .container {
         display: flex;
         height: 100px;
@@ -115,6 +115,44 @@ body {
           height: 25vh;
           // margin-top: 60px;
         }
+        .productWord {
+          position: absolute;
+          top: 17%;
+          left: 75%;
+          img {
+            width: 23vw;
+            height: auto;
+          }
+        }
+      }
+      .light {
+        position: absolute;
+        top: 0;
+        padding-top: 140px;
+        width: 100%;
+        height: 100vh;
+        // background-color: burlywood;
+        background-image: url("./products/layer1_light.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        // background-attachment: fixed;
+        @media screen and (max-width: 1280px) {
+          height: 75vh;
+          // margin-top: 60px;
+        }
+        @media screen and (max-width: 1024px) {
+          height: 50vh;
+          // margin-top: 60px;
+        }
+        @media screen and (max-width: 768px) {
+          height: 33vh;
+          // margin-top: 60px;
+        }
+        @media screen and (max-width: 375px) {
+          height: 25vh;
+          // margin-top: 60px;
+        }
       }
       .product_box {
         width: 100%;
@@ -166,6 +204,21 @@ body {
               width: auto;
               height: 100%;
             }
+          }
+          &:after {
+            content: "";
+            position: absolute;
+            background-image: url("./products/layer3_1people.png");
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: center;
+            width: 40vw;
+            height: 100%;
+            left: 10vw;
+            @media screen and (max-width: 768px) {
+              left: 40vw;
+            }
+            z-index: 1111;
           }
         }
         .layer2_r {
@@ -255,6 +308,7 @@ body {
           position: absolute;
           left: 0;
           top: 0;
+          margin-left: unset;
           width: 100%;
           height: 100%;
           display: flex;
@@ -268,6 +322,17 @@ body {
           img {
             width: 100%;
             height: auto;
+          }
+        }
+        .peoLayer5 {
+          position: absolute;
+          left: 50%;
+          transform: translateX(-50%);
+          bottom: 0;
+          z-index: 1111;
+          img {
+            width: 45vw;
+            // height: 50vh;
           }
         }
       }

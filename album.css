@@ -13,6 +13,7 @@ body .container-fluid {
 }
 
 body .container-fluid .navbar {
+  z-index: 11111;
   width: 100%;
   background-image: url("./img/pic2/NAV.png");
 }
@@ -206,6 +207,11 @@ body .container-fluid .albumInsideContentBox.active .albumFirstContent .albumNam
   text-align: center;
 }
 
+body .container-fluid .albumInsideContentBox.active .albumFirstContent .albumName img {
+  width: 100%;
+  height: auto;
+}
+
 @media screen and (max-width: 1024px) {
   body .container-fluid .albumInsideContentBox.active .albumFirstContent .albumName {
     width: 100%;
@@ -222,16 +228,6 @@ body .container-fluid .albumInsideContentBox.active .listBox {
           align-items: center;
   width: calc(100% - 55vh);
   height: 100%;
-}
-
-body .container-fluid .albumInsideContentBox.active .listBox ul {
-  padding-top: 20%;
-}
-
-body .container-fluid .albumInsideContentBox.active .listBox ul li {
-  text-align: center;
-  font-size: 35px;
-  color: white;
 }
 
 body .container-fluid .albumInsideContentBox.active .listBox .songName {
@@ -279,16 +275,38 @@ body .container-fluid .container {
   padding-top: 140px;
 }
 
+body .container-fluid .container .mask {
+  position: absolute;
+  left: 0;
+  z-index: 1111;
+  width: 100%;
+  height: 7vh;
+}
+
+body .container-fluid .container .mask .maskLine {
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  z-index: 1111;
+  width: 70%;
+  height: 3.5vh;
+  border-bottom: 3px black solid;
+}
+
 body .container-fluid .container .Name {
   width: 100%;
   height: 28vh;
 }
 
+body .container-fluid .container .Name .mask {
+  width: 100%;
+  height: 7vh;
+  background: #5f2b2b;
+}
+
 body .container-fluid .container .Name .NameList .swiper-slide {
   text-align: center;
-  font-size: 32px;
-  background: #fff;
-  border: #a912aa solid 6px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -300,9 +318,15 @@ body .container-fluid .container .Name .NameList .swiper-slide {
           align-items: center;
 }
 
-body .container-fluid .container .Name .NameList .swiper-slide.active {
-  background: #5f2b2b;
-  color: white;
+body .container-fluid .container .Name .NameList .swiper-slide img {
+  height: 100%;
+  width: auto;
+}
+
+@media screen and (max-width: 768px) {
+  body .container-fluid .container .Name .NameList .swiper-slide img {
+    height: 60%;
+  }
 }
 
 body .container-fluid .container .Pic {

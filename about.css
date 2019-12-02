@@ -33,6 +33,16 @@ body .container-fluid .navbar .container {
       flex-wrap: nowrap;
 }
 
+body .container-fluid .navbar .container .nav-item .dropdown-menu {
+  min-width: 92vw;
+  background-color: #6824da;
+}
+
+body .container-fluid .navbar .container .nav-item .dropdown-menu a {
+  color: aliceblue;
+  text-align: center;
+}
+
 body .container-fluid .navbar .container .navbar-brand {
   padding-top: 100px;
   height: 180px;

@@ -20,7 +20,17 @@ body {
         height: 100px;
         padding-top: 40px;
         flex-wrap: nowrap;
+        .nav-item {
+          .dropdown-menu {
+            min-width: 92vw;
+            background-color: #6824da;
 
+            a {
+              color: aliceblue;
+              text-align: center;
+            }
+          }
+        }
         .navbar-brand {
           padding-top: 100px;
           height: 180px;
@@ -89,6 +99,7 @@ body {
       }
     }
     .container-fluid {
+      position: relative;
       .first_product_box {
         padding-top: 140px;
         width: 100%;
@@ -107,21 +118,21 @@ body {
           height: 50vh;
           // margin-top: 60px;
         }
-        @media screen and (max-width: 768px) {
-          height: 33vh;
-          // margin-top: 60px;
-        }
-        @media screen and (max-width: 375px) {
+
+        @media screen and (max-width: 414px) {
           height: 25vh;
           // margin-top: 60px;
         }
         .productWord {
           position: absolute;
-          top: 17%;
+          top: 10vh;
           left: 75%;
           img {
             width: 23vw;
             height: auto;
+          }
+          @media screen and (max-width: 414px) {
+            top: 1vh;
           }
         }
       }
@@ -136,6 +147,9 @@ body {
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
+        animation-name: light;
+        animation-duration: 0.5s;
+        animation-iteration-count: infinite;
         // background-attachment: fixed;
         @media screen and (max-width: 1280px) {
           height: 75vh;
@@ -145,11 +159,8 @@ body {
           height: 50vh;
           // margin-top: 60px;
         }
-        @media screen and (max-width: 768px) {
-          height: 33vh;
-          // margin-top: 60px;
-        }
-        @media screen and (max-width: 375px) {
+
+        @media screen and (max-width: 414px) {
           height: 25vh;
           // margin-top: 60px;
         }
@@ -188,8 +199,12 @@ body {
 
       .box2 {
         .layer2_l {
+          background: rgb(255, 104, 3);
+          background: linear-gradient(0deg, rgba(255, 104, 3, 1) 0%, rgba(50, 7, 143, 1) 100%);
           // border: #ee0a35 1px solid;
           height: 100%;
+          margin-top: 10px;
+          // margin-left: 10px;
           height: calc(66vw - 20px);
           padding: 0px;
           background-repeat: no-repeat;
@@ -238,8 +253,8 @@ body {
             // background-repeat: no-repeat;
             // background-size: cover;
             // background-position: center;
-            background: rgb(208, 106, 42);
-            background: linear-gradient(0deg, rgba(208, 106, 42, 1) 0%, rgba(12, 16, 103, 0.9920343137254902) 100%);
+            background: rgb(255, 104, 3);
+            background: linear-gradient(0deg, rgba(255, 104, 3, 1) 0%, rgba(50, 7, 143, 1) 100%);
             display: flex;
             align-items: center;
             @media screen and (max-width: 414px) {
@@ -275,7 +290,9 @@ body {
           position: absolute;
           width: 50%;
           height: 70%;
-          background-color: salmon;
+          background: rgb(180, 72, 213);
+          background: linear-gradient(28deg, rgba(180, 72, 213, 0.0632183908045977) 0%, rgba(56, 24, 126, 1) 100%);
+
           // margin:0 auto
           // transform: translateX(50%);
           // transform: translateY(50%);
@@ -400,5 +417,13 @@ body {
   }
   100% {
     background-image: url("./img/pic2/nw.png");
+  }
+}
+@keyframes light {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
   }
 }

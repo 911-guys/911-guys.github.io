@@ -33,6 +33,16 @@ html body .top .navbar .container {
       flex-wrap: nowrap;
 }
 
+html body .top .navbar .container .nav-item .dropdown-menu {
+  min-width: 92vw;
+  background-color: #6824da;
+}
+
+html body .top .navbar .container .nav-item .dropdown-menu a {
+  color: aliceblue;
+  text-align: center;
+}
+
 html body .top .navbar .container .navbar-brand {
   padding-top: 100px;
   height: 180px;

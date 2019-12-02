@@ -396,10 +396,10 @@
             slidesPerView: 4,
             loop: true,
             loopedSlides: 12,
-            pagination: {
-                el: '.swiper-pagination',
-                clickable: true,
-            },
+            // pagination: {
+            //     el: '.swiper-pagination',
+            //     clickable: true,
+            // },
         });
         // 專輯內部的歌曲名稱
         var swiper_name = new Swiper('.songName', {
@@ -412,7 +412,7 @@
             //     clickable: true,
             // },
         });
-
+ 
         swiper_Pic.controller.control = swiper_words;
         swiper_words.controller.control = swiper_Pic;
 

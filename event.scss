@@ -24,7 +24,17 @@ html{
         height: 100px;
         padding-top: 40px;
         flex-wrap: nowrap;
+        .nav-item {
+          .dropdown-menu {
+            min-width: 92vw;
+            background-color: #6824da;
 
+            a {
+              color: aliceblue;
+              text-align: center;
+            }
+          }
+        }
         .navbar-brand {
           padding-top: 100px;
           height: 180px;

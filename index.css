@@ -29,6 +29,16 @@ body .allBg .navbar .container {
       flex-wrap: nowrap;
 }
 
+body .allBg .navbar .container .nav-item .dropdown-menu {
+  min-width: 92vw;
+  background-color: #6824da;
+}
+
+body .allBg .navbar .container .nav-item .dropdown-menu a {
+  color: aliceblue;
+  text-align: center;
+}
+
 body .allBg .navbar .container .navbar-brand {
   padding-top: 100px;
   height: 180px;

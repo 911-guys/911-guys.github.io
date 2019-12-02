@@ -7,6 +7,7 @@ body {
 body .allBg {
   width: 100%;
   height: 100%;
+  padding-left: unset;
   background-image: url("./img/pic2/BG.png");
   background-repeat: no-repeat;
   background-size: cover;

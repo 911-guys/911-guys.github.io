@@ -100,13 +100,14 @@ html{
       justify-content: center;
       // position: relative;
       align-items: center;
+      padding-top: 33vh;
       width: 100%;
       height: 75vh;
       img {
         animation-name: startShine;
         animation-duration: 1.2s;
         animation-iteration-count: infinite;
-        width: 30%;
+        width: 25%;
         height: auto;
         // position: absolute;
         // margin: auto;
@@ -131,6 +132,7 @@ html{
     .eventAll {
       // padding: 0 ;
       // background-color: grey;
+      padding-left: unset;
       .background {
         background-image: url(./event/bgline.png);
         background-repeat: no-repeat;
@@ -275,6 +277,7 @@ html{
       .footer {
         position: fixed;
         width: 100%;
+        margin: 0;
         padding: 3px;
         color: azure;
         background-color: #0c0a35;

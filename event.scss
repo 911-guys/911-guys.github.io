@@ -32,6 +32,9 @@ html {
               a {
                 color: aliceblue;
                 text-align: center;
+                &:hover{
+                  color: black;
+                }
               }
             }
           }

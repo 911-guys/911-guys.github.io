@@ -43,6 +43,10 @@ html body .top .navbar .container .nav-item .dropdown-menu a {
   text-align: center;
 }
 
+html body .top .navbar .container .nav-item .dropdown-menu a:hover {
+  color: black;
+}
+
 html body .top .navbar .container .navbar-brand {
   padding-top: 100px;
   height: 180px;

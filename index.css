@@ -39,6 +39,10 @@ body .allBg .navbar .container .nav-item .dropdown-menu a {
   text-align: center;
 }
 
+body .allBg .navbar .container .nav-item .dropdown-menu a:hover {
+  color: black;
+}
+
 body .allBg .navbar .container .navbar-brand {
   padding-top: 100px;
   height: 180px;

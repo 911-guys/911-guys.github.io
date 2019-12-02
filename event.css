@@ -158,26 +158,13 @@ html body .top .eventAll {
   padding-left: unset;
 }
 
-html body .top .eventAll .background {
-  background-image: url(./event/bgline.png);
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
-}
-
-@media screen and (max-width: 768px) {
-  html body .top .eventAll .background {
-    background-image: url();
-  }
-}
-
-html body .top .eventAll .background .event_box .timeline {
+html body .top .eventAll .event_box .timeline {
   position: relative;
   max-width: 1140px;
   margin: 0 auto;
 }
 
-html body .top .eventAll .background .event_box .timeline:after {
+html body .top .eventAll .event_box .timeline:after {
   content: "";
   position: absolute;
   width: 6px;
@@ -189,12 +176,12 @@ html body .top .eventAll .background .event_box .timeline:after {
 }
 
 @media screen and (max-width: 768px) {
-  html body .top .eventAll .background .event_box .timeline:after {
+  html body .top .eventAll .event_box .timeline:after {
     left: 30px;
   }
 }
 
-html body .top .eventAll .background .event_box .timeline .container {
+html body .top .eventAll .event_box .timeline .container {
   padding: 0;
   position: relative;
   width: 50%;
@@ -203,7 +190,7 @@ html body .top .eventAll .background .event_box .timeline .container {
 }
 
 @media screen and (max-width: 768px) {
-  html body .top .eventAll .background .event_box .timeline .container {
+  html body .top .eventAll .event_box .timeline .container {
     width: 100%;
     font-size: 35px;
     padding: 0;
@@ -211,13 +198,13 @@ html body .top .eventAll .background .event_box .timeline .container {
 }
 
 @media screen and (max-width: 414px) {
-  html body .top .eventAll .background .event_box .timeline .container {
+  html body .top .eventAll .event_box .timeline .container {
     width: 100%;
     font-size: 20px;
   }
 }
 
-html body .top .eventAll .background .event_box .timeline .container:after {
+html body .top .eventAll .event_box .timeline .container:after {
   content: "";
   position: absolute;
   width: 25px;
@@ -230,43 +217,43 @@ html body .top .eventAll .background .event_box .timeline .container:after {
   z-index: 1;
 }
 
-html body .top .eventAll .background .event_box .timeline .container .content {
+html body .top .eventAll .event_box .timeline .container .content {
   padding: 20px 30px;
   position: relative;
   border-radius: 6px;
 }
 
-html body .top .eventAll .background .event_box .timeline .container .content img {
+html body .top .eventAll .event_box .timeline .container .content img {
   width: 100%;
 }
 
-html body .top .eventAll .background .event_box .timeline .container.left {
+html body .top .eventAll .event_box .timeline .container.left {
   left: -25%;
 }
 
 @media screen and (max-width: 768px) {
-  html body .top .eventAll .background .event_box .timeline .container.left {
+  html body .top .eventAll .event_box .timeline .container.left {
     left: 30px;
   }
 }
 
 @media screen and (max-width: 768px) {
-  html body .top .eventAll .background .event_box .timeline .container.left:after {
+  html body .top .eventAll .event_box .timeline .container.left:after {
     left: -13px;
   }
 }
 
-html body .top .eventAll .background .event_box .timeline .container.right {
+html body .top .eventAll .event_box .timeline .container.right {
   left: 25%;
 }
 
 @media screen and (max-width: 768px) {
-  html body .top .eventAll .background .event_box .timeline .container.right {
+  html body .top .eventAll .event_box .timeline .container.right {
     left: 30px;
   }
 }
 
-html body .top .eventAll .background .event_box .timeline .container.right:after {
+html body .top .eventAll .event_box .timeline .container.right:after {
   left: -13px;
 }
 

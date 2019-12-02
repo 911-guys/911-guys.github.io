@@ -133,15 +133,16 @@ html{
       // padding: 0 ;
       // background-color: grey;
       padding-left: unset;
-      .background {
-        background-image: url(./event/bgline.png);
-        background-repeat: no-repeat;
-        background-size: contain;
-        background-position: center;
-        @media screen and (max-width: 768px) {
-          background-image: url();
-        }
+      // .background {
+        // background-image: url(./event/bgline.png);
+        // background-repeat: no-repeat;
+        // background-size: contain;
+        // background-position: center;
+        // @media screen and (max-width: 768px) {
+        //   background-image: url();
+        // }
         .event_box {
+
           .timeline {
             //時間線 中間那條
             position: relative;
@@ -248,8 +249,9 @@ html{
               }
             }
           }
+
         }
-      }
+      // }
 
       .loading {
         display: flex;

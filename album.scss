@@ -212,7 +212,9 @@ body {
           // padding-top: 20%;
           margin: 0;
           @media screen and (max-width: 1024px) {
-            
+            height: 80%;
+            position: relative;
+            top: -7%;
           }
           li {
             

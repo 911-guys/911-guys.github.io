@@ -252,6 +252,14 @@ body .container-fluid .albumInsideContentBox.active .listBox ul {
   margin: 0;
 }
 
+@media screen and (max-width: 1024px) {
+  body .container-fluid .albumInsideContentBox.active .listBox ul {
+    height: 80%;
+    position: relative;
+    top: -7%;
+  }
+}
+
 body .container-fluid .albumInsideContentBox.active .listBox ul li {
   font-size: 30px;
   padding: 0px;

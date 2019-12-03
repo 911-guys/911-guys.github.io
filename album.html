@@ -469,7 +469,7 @@
         })
 
         var albumInsideContentBox = document.querySelectorAll('.albumInsideContentBox');
-        console.log(albumInsideContentBox);//0-12
+        // console.log(albumInsideContentBox);//0-12
 
         $('.Pic').click(function () {
             console.log(swiper_Pic.activeIndex);//12-24
@@ -513,7 +513,7 @@
 
         // albumInsideContentBox.classList.remove('active');
 
-        doc.find('.albumInsideContentBox').on('click', function (e) {
+        $('.albumInsideContentBox').on('click', function (e) {
 
             $(this).removeClass('active');
 

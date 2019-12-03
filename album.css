@@ -298,30 +298,51 @@ body .container-fluid .container {
 body .container-fluid .container .mask {
   position: absolute;
   left: 0;
+  top: 60%;
   z-index: 1111;
   width: 100%;
   height: 7vh;
 }
 
-body .container-fluid .container .mask .maskLine {
+body .container-fluid .container .mask:before {
+  content: "";
   position: absolute;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-  z-index: 1111;
-  width: 70%;
-  height: 3.5vh;
-  border-bottom: 3px white solid;
+  width: 30px;
+  height: 30px;
+  left: 10%;
+  -webkit-transform: translateY(29%);
+          transform: translateY(29%);
+  background-size: cover;
+  background-position: center;
+  background-image: url("./albumPic/L.png");
+}
+
+body .container-fluid .container .mask:after {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  right: 10%;
+  -webkit-transform: translateY(29%);
+          transform: translateY(29%);
+  background-size: cover;
+  background-position: center;
+  background-image: url("./albumPic/R.png");
 }
 
 body .container-fluid .container .Name {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
   width: 100%;
   height: 28vh;
 }
 
 body .container-fluid .container .Name .mask {
   width: 100%;
-  height: 7vh;
+  height: 14vh;
   background: #5f2b2b;
 }
 
@@ -354,7 +375,7 @@ body .container-fluid .container .Pic {
   height: 400px;
   position: absolute;
   left: 50%;
-  top: 70%;
+  top: 35%;
   margin-left: -200px;
   margin-top: -200px;
 }

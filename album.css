@@ -142,7 +142,7 @@ body .container-fluid .albumInsideContentBox.active {
 body .container-fluid .albumInsideContentBox.active:after {
   cursor: pointer;
   pointer-events: auto;
-  content: attr(data_text);
+  content: "";
   position: absolute;
   width: 30px;
   height: 30px;

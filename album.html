@@ -447,16 +447,23 @@
         var songNameList = document.querySelectorAll('.songNameList');
         var songPicture = document.querySelectorAll('.songPicture');
 
+        // albumInsideContentBox.classList.remove('active');
 
-        albumInsideContentBox.forEach((element, index) => {
-
-
-            element.onclick = function () {
-                element.classList.remove('active');
-            }
+        doc.find('.albumInsideContentBox').on('click', function (e) {
+            
+                $(this).removeClass('active');
+           
         });
 
-</script>
+
+
+        // albumInsideContentBox.forEach((element, index) => {
+        //     element.onclick = function () {
+        //         element.classList.remove('active');
+        //     }
+        // });
+
+    </script>
 
 
 

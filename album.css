@@ -257,6 +257,7 @@ body .container-fluid .albumInsideContentBox.active .listBox ul {
     height: 80%;
     position: relative;
     top: -7%;
+    padding: 10px;
   }
 }
 

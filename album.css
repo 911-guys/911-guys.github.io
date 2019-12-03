@@ -124,7 +124,7 @@ body .container-fluid .albumInsideContentBox {
 body .container-fluid .albumInsideContentBox.active {
   padding-top: 10px;
   position: absolute;
-  top: 20vh;
+  top: 15vh;
   left: 50%;
   z-index: 2222;
   width: 100%;
@@ -309,12 +309,24 @@ body .container-fluid .container .mask:before {
   position: absolute;
   width: 30px;
   height: 30px;
-  left: 10%;
-  -webkit-transform: translateY(29%);
-          transform: translateY(29%);
+  left: 30%;
+  -webkit-transform: translateY(60%);
+          transform: translateY(60%);
   background-size: cover;
   background-position: center;
   background-image: url("./albumPic/L.png");
+}
+
+@media screen and (max-width: 1280px) {
+  body .container-fluid .container .mask:before {
+    left: 15%;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  body .container-fluid .container .mask:before {
+    left: 5%;
+  }
 }
 
 body .container-fluid .container .mask:after {
@@ -322,12 +334,24 @@ body .container-fluid .container .mask:after {
   position: absolute;
   width: 30px;
   height: 30px;
-  right: 10%;
-  -webkit-transform: translateY(29%);
-          transform: translateY(29%);
+  right: 30%;
+  -webkit-transform: translateY(60%);
+          transform: translateY(60%);
   background-size: cover;
   background-position: center;
   background-image: url("./albumPic/R.png");
+}
+
+@media screen and (max-width: 1280px) {
+  body .container-fluid .container .mask:after {
+    right: 15%;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  body .container-fluid .container .mask:after {
+    right: 5%;
+  }
 }
 
 body .container-fluid .container .Name {
@@ -371,27 +395,41 @@ body .container-fluid .container .Name .NameList .swiper-slide img {
 }
 
 body .container-fluid .container .Pic {
-  width: 400px;
-  height: 400px;
-  position: absolute;
-  left: 50%;
-  top: 35%;
-  margin-left: -200px;
-  margin-top: -200px;
+  width: 100%;
+  margin-top: 5%;
 }
 
-@media screen and (max-width: 414px) {
+@media screen and (max-width: 1280px) {
   body .container-fluid .container .Pic {
-    width: 200px;
-    height: 200px;
-    margin-left: -100px;
-    margin-top: -100px;
+    margin-top: 10%;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  body .container-fluid .container .Pic {
+    margin-top: 8%;
   }
 }
 
 body .container-fluid .container .Pic .swiper-wrapper .swiper-slide {
   background-position: center;
   background-size: cover;
+  width: 300px;
+  height: 300px;
+}
+
+@media screen and (max-width: 414px) {
+  body .container-fluid .container .Pic .swiper-wrapper .swiper-slide {
+    width: 250px;
+    height: 250px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  body .container-fluid .container .Pic .swiper-wrapper .swiper-slide {
+    width: 210px;
+    height: 210px;
+  }
 }
 
 body .container-fluid .footer {

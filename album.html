@@ -392,15 +392,18 @@
         // });
         // 專輯圖片
         var swiper_Pic = new Swiper('.Pic', {
-            effect: 'cube',
-            grabCursor: true,
+            effect: 'coverflow',
+            // grabCursor: true,
+            centeredSlides: true,
+            slidesPerView: 'auto',
             loop: true,
             loopedSlides: 12,
-            cubeEffect: {
-                shadow: true,
+            coverflowEffect: {
+                rotate: 50,
+                stretch: 0,
+                depth: 100,
+                modifier: 1,
                 slideShadows: true,
-                shadowOffset: 20,
-                shadowScale: 0.94,
             },
         })
 
@@ -450,9 +453,9 @@
         // albumInsideContentBox.classList.remove('active');
 
         doc.find('.albumInsideContentBox').on('click', function (e) {
-            
-                $(this).removeClass('active');
-           
+
+            $(this).removeClass('active');
+
         });
 
 

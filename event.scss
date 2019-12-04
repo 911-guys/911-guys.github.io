@@ -78,7 +78,9 @@ html {
               background-image: url("./obj/select.png");
               width: 60px;
               height: 60px;
-              
+              background-size: cover;
+              background-repeat: no-repeat;
+              background-position: center;
               position: relative;
               .dropdown-toggle {
                 &:after {

@@ -128,7 +128,8 @@ body .container-fluid .albumInsideContentBox.active {
   left: 50%;
   z-index: 2222;
   width: 100%;
-  height: 75vh;
+  height: 77%;
+  overflow: auto;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
   background: #9f5db3;
@@ -203,14 +204,14 @@ body .container-fluid .albumInsideContentBox.active .albumFirstContent .albumPic
 
 @media screen and (max-width: 1024px) {
   body .container-fluid .albumInsideContentBox.active .albumFirstContent .albumPicture img {
-    width: 50vw;
+    width: 30vw;
     height: auto;
   }
 }
 
 @media screen and (max-width: 768px) {
   body .container-fluid .albumInsideContentBox.active .albumFirstContent .albumPicture img {
-    width: 60vw;
+    width: 30vw;
     height: auto;
   }
 }
@@ -224,6 +225,7 @@ body .container-fluid .albumInsideContentBox.active .albumFirstContent .albumNam
 body .container-fluid .albumInsideContentBox.active .albumFirstContent .albumName img {
   width: 100%;
   height: auto;
+  padding-top: 15px;
 }
 
 @media screen and (max-width: 1024px) {
@@ -241,15 +243,17 @@ body .container-fluid .albumInsideContentBox.active .listBox {
       -ms-flex-align: center;
           align-items: center;
   width: calc(100% - 55vh);
-  height: 100%;
 }
 
 body .container-fluid .albumInsideContentBox.active .listBox ul {
-  overflow: scroll;
   width: 100%;
   height: 90%;
   list-style: none;
   margin: 0;
+}
+
+body .container-fluid .albumInsideContentBox.active .listBox ul ul::-webkit-scrollbar {
+  display: none;
 }
 
 @media screen and (max-width: 1024px) {
@@ -267,7 +271,7 @@ body .container-fluid .albumInsideContentBox.active .listBox ul li {
   color: white;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1200px) {
   body .container-fluid .albumInsideContentBox.active .listBox ul li {
     font-size: 23px;
   }
@@ -322,7 +326,6 @@ body .container-fluid .albumInsideContentBox.active .listBox .songName .NameList
 @media screen and (max-width: 768px) {
   body .container-fluid .albumInsideContentBox.active .listBox {
     width: 100%;
-    height: calc(100% - 10vh - 60vw);
   }
 }
 

@@ -59,12 +59,13 @@
                 <div class="productWord"><img src="./products/layer1_products.png" alt=""></div>
             </div>
             <div class="light"></div>
-            <div class="product_box box1">
+            <div class="swiper-container product_box box1">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide" style="background-image: url('./Products_pic/layer2_1.png');"></div>
                     <div class="swiper-slide" style="background-image: url('./Products_pic/layer2_2.png');"></div>
                 </div>
-                <div class="swiper-pagination"></div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
             </div>
 
             <div class="row product_box box2">
@@ -110,7 +111,7 @@
 
             </div>
 
-            <div class="swiper-container product_box">
+            <div class="swiper-container product_box box2">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide" style="background-image: url('./Products_pic/layer7.png');">Slide 1</div>
                     <div class="swiper-slide" style="background-image: url('./Products_pic/layer7_2.png');">Slide 2
@@ -145,19 +146,24 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
     <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
     <script>
-        var swiper = new Swiper('.box1', {
+        var swiper1 = new Swiper('.box1', {
             slidesPerView: 1,
             // spaceBetween: 30,
             loop: true,
-            pagination: {
-                el: '.swiper-pagination',
-                clickable: true,
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+                 clickable: true,
             },
+            // pagination: {
+            //     el: '.swiper-pagination',
+            //    
+            // },
         });
     </script>
 
     <script>
-        var swiper = new Swiper('.swiper-container', {
+        var swiper = new Swiper('.box2', {
             slidesPerView: 2,
             // spaceBetween: 30,
             // slidesPerGroup: 2,

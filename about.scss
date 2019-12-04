@@ -315,9 +315,11 @@ body {
             width: 45%;
             z-index: 1111;
             .people_text {
-              text-align: center;
+              // text-align: center;
               font-size: 35px;
+              font-family: 'Noto Sans TC', sans-serif;
               position: relative;
+              // line-height: 30px;
               
               // padding: 50px;
               // position: absolute;
@@ -329,6 +331,10 @@ body {
 
               @media screen and (max-width: 1024px) {
                 font-size: 30px;
+              }
+
+              @media screen and (max-width: 991px) {
+                font-size: 20px;
               }
               @media screen and (max-width: 768px) {
                 font-size: 20px;
@@ -418,10 +424,15 @@ body {
             padding: 10px;
             color: wheat;
             margin: auto;
-            text-align: center;
+            // text-align: center;
             line-height: 30px;
             height: 70%;
             font-weight: bold;
+            font-family: 'Noto Sans TC', sans-serif;
+            h2{
+                          text-align: center;
+
+            }
           }
         }
       }

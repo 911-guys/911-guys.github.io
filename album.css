@@ -266,7 +266,9 @@ body .container-fluid .albumInsideContentBox.active .listBox ul ul::-webkit-scro
 }
 
 body .container-fluid .albumInsideContentBox.active .listBox ul li {
-  font-size: 30px;
+  font-family: 'Noto Sans TC', sans-serif;
+  font-size: 20px;
+  line-height: 50px;
   padding: 0px;
   color: white;
 }

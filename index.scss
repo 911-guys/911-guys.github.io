@@ -28,7 +28,7 @@ body {
             a {
               color: aliceblue;
               text-align: center;
-              &:hover{
+              &:hover {
                 color: black;
               }
             }
@@ -74,6 +74,9 @@ body {
             background-image: url("./obj/select.png");
             width: 60px;
             height: 60px;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
             position: relative;
             .dropdown-toggle {
               &:after {
@@ -123,10 +126,18 @@ body {
       #scene4 {
         bottom: 5%;
         left: 12%;
+        @media screen and (max-width: 414px) {
+          bottom: 5%;
+          left: -15%;
+        }
       }
       #scene5 {
         bottom: 30%;
         left: 12%;
+        @media screen and (max-width: 414px) {
+          bottom: 30%;
+          left: -15%;
+        }
       }
       #scene6 {
         bottom: 35%;
@@ -137,40 +148,40 @@ body {
         left: 60%;
       }
 
-        // .bgCont{
-        //   width: 100%;
-        //   height: 100vh;
-        //   .bg-img{
-        //     width: 20%;
-        //     height: 20%;
-        //   }
-        //   .bgObj01{
-        //     bottom: 5%;
-        // left: 12%;
-        //   }
-        //   .bgObj02{
-        //     bottom: 30%;
-        // left: 12%;
-        //   }
-        //   .bgObj03{
-        //     bottom: 35%;
-        // left: 50%;
-        //   }
-        //   .bgObj04{
-        //     bottom: 10%;
-        // left: 60%;
-        //   }
-        // }
+      // .bgCont{
+      //   width: 100%;
+      //   height: 100vh;
+      //   .bg-img{
+      //     width: 20%;
+      //     height: 20%;
+      //   }
+      //   .bgObj01{
+      //     bottom: 5%;
+      // left: 12%;
+      //   }
+      //   .bgObj02{
+      //     bottom: 30%;
+      // left: 12%;
+      //   }
+      //   .bgObj03{
+      //     bottom: 35%;
+      // left: 50%;
+      //   }
+      //   .bgObj04{
+      //     bottom: 10%;
+      // left: 60%;
+      //   }
+      // }
 
       .row {
         height: 75%;
         @media screen and (max-width: 991px) {
-         padding-top:100px ;
+          padding-top: 100px;
         }
         .col {
           height: 100%;
-          &:hover .scene_head{
-            animation-duration: .2s;
+          &:hover .scene_head {
+            animation-duration: 0.2s;
             animation-name: jump1;
           }
           @media screen and (max-width: 991px) {
@@ -244,14 +255,14 @@ body {
 }
 @keyframes jump {
   0% {
-    transform:rotate(3deg);
+    transform: rotate(3deg);
     top: 20px;
   }
   20% {
     border-radius: 2px; /*從 20% 的地方才開始變形*/
   }
   50% {
-    transform:rotate(-3deg);
+    transform: rotate(-3deg);
     top: 50px;
     /* border-bottom-right-radius:25px; */
   }
@@ -259,20 +270,20 @@ body {
     border-radius: 2px; /*到 80% 的地方恢復原狀*/
   }
   100% {
-    transform:rotate(3deg);
+    transform: rotate(3deg);
     top: 20px;
   }
 }
 @keyframes jump1 {
   0% {
-    transform:rotate(3deg);
+    transform: rotate(3deg);
     // top: 20px;
   }
   20% {
     border-radius: 2px; /*從 20% 的地方才開始變形*/
   }
   50% {
-    transform:rotate(-3deg);
+    transform: rotate(-3deg);
     // top: 50px;
     /* border-bottom-right-radius:25px; */
   }
@@ -280,7 +291,7 @@ body {
     border-radius: 2px; /*到 80% 的地方恢復原狀*/
   }
   100% {
-    transform:rotate(3deg);
+    transform: rotate(3deg);
     // top: 20px;
   }
 }

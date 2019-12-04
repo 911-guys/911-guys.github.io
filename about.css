@@ -366,8 +366,8 @@ body .container-fluid .container .row .people_container.active .textbox {
 }
 
 body .container-fluid .container .row .people_container.active .textbox .people_text {
-  text-align: center;
   font-size: 35px;
+  font-family: 'Noto Sans TC', sans-serif;
   position: relative;
   width: 100%;
   color: beige;
@@ -376,6 +376,12 @@ body .container-fluid .container .row .people_container.active .textbox .people_
 @media screen and (max-width: 1024px) {
   body .container-fluid .container .row .people_container.active .textbox .people_text {
     font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  body .container-fluid .container .row .people_container.active .textbox .people_text {
+    font-size: 20px;
   }
 }
 
@@ -478,10 +484,14 @@ body .container-fluid .history .bg .in .word {
   padding: 10px;
   color: wheat;
   margin: auto;
-  text-align: center;
   line-height: 30px;
   height: 70%;
   font-weight: bold;
+  font-family: 'Noto Sans TC', sans-serif;
+}
+
+body .container-fluid .history .bg .in .word h2 {
+  text-align: center;
 }
 
 @media screen and (max-width: 1024px) {
